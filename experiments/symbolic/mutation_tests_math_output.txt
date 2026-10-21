@@ -1,0 +1,17 @@
+# commit 17ad7f2; Python 3.13.16, numpy 2.5.3, scipy 1.18.1, sympy 1.14.0; seed 20261020
+Exact checks (verify_math_exact.py)
+  [caught] W3: a frame tuple duplicated
+  [caught] W2: a frame pairing swapped
+  [caught] W3: rank under-counted by one
+  [caught] W4: mu dropped from the stabiliser equations
+Numerical checks (verify_math_numerical.py, quick sizes)
+  [caught] U1: the sqrt(2) of the standardisation dropped
+  [caught] U3: the Theorem 5.3 bound divided by 2
+  [caught] U4: 32/pi^2 halved
+  [caught] U5: wrong set of unused brackets
+  [caught] U2: standardised bound too small by a factor of 2
+Macaulay2 (verify_frame_m2.m2 with the target of CR_12(3,4;5,k) changed from z/w to y/w)
+  [caught] Macaulay2: wrong target
+Recorded failure: a reconstruction of the first version of U1 (quick mode)
+  [fails, as recorded] reconstructed first version of U1
+ALL MUTATIONS CAUGHT

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CAPRI paper: the pencil of planes (Section 6). Layout made for Inkscape; edit this template, not pencil.svg.
+     The 3D view is assets/pencil_3d.png (render_assets.R, exact geometry); label positions were placed from
+     assets/pencil_3d_labels.csv. Placeholders in double braces are filled by render_assets.R. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1100" height="430" viewBox="0 0 1100 430">
+  <defs>
+    <style>
+      text { font-family: Roboto, sans-serif; }
+      .head { font-size: 19px; font-weight: 500; fill: #202124; }
+      .num { font-size: 19px; font-weight: 700; fill: #c5532f; }
+      .body { font-size: 14.5px; fill: #3c4043; }
+      .small { font-size: 12.5px; fill: #80868b; }
+      .m { font-family: 'Latin Modern Roman', serif; font-style: italic; fill: #202124; }
+      .r { font-family: 'Latin Modern Roman', serif; font-style: normal; fill: #202124; }
+      .panel { fill: #ffffff; stroke: #d5d7da; stroke-width: 1.6; }
+    </style>
+  </defs>
+  <rect width="1100" height="430" fill="#ffffff"/>
+
+  <!-- a on a photo ........................................................................ -->
+  <rect x="6" y="6" width="236" height="418" rx="14" class="panel"/>
+  <text x="22" y="36" class="head"><tspan class="num">a</tspan><tspan dx="8">On a photo</tspan></text>
+  <image xlink:href="../abstracts/assets/pencil_on_photo.png" x="46" y="52" width="150" height="225"/>
+  <text class="body"><tspan x="22" y="304">The line through <tspan class="m" font-size="17">p</tspan><tspan class="m" font-size="12" baseline-shift="sub">i</tspan><tspan class="m" font-size="17">, p</tspan><tspan class="m" font-size="12" baseline-shift="sub">j</tspan> (white)</tspan><tspan x="22" y="325">and four further points span</tspan><tspan x="22" y="346">four planes: a pencil. Each pair</tspan><tspan x="22" y="367">of points and 4-set of the others</tspan><tspan x="22" y="388">gives one; <tspan class="m" font-size="16">n</tspan> points give many.</tspan></text>
+
+  <!-- b in space ........................................................................... -->
+  <rect x="252" y="6" width="282" height="418" rx="14" class="panel"/>
+  <text x="268" y="36" class="head"><tspan class="num">b</tspan><tspan dx="8">A pencil of planes</tspan></text>
+  <image xlink:href="assets/pencil_3d.png" x="262.0" y="48.0" width="248.0" height="353.4"/>
+    <text x="349.1" y="357.4"><tspan class="m" font-size="18">p</tspan><tspan class="m" font-size="12" baseline-shift="sub">i</tspan></text>
+  <text x="349.1" y="186.2"><tspan class="m" font-size="18">p</tspan><tspan class="m" font-size="12" baseline-shift="sub">j</tspan></text>
+  <text x="309.8" y="163.1"><tspan class="m" font-size="17" fill="#1a73e8">p</tspan><tspan class="m" font-size="12" baseline-shift="sub" fill="#1a73e8">c</tspan></text>
+  <text x="379.7" y="222.3"><tspan class="m" font-size="17" fill="#188038">p</tspan><tspan class="m" font-size="12" baseline-shift="sub" fill="#188038">d</tspan></text>
+  <text x="430.2" y="208.9"><tspan class="m" font-size="17" fill="#e8710a">p</tspan><tspan class="m" font-size="12" baseline-shift="sub" fill="#e8710a">e</tspan></text>
+  <text x="463.2" y="303.5"><tspan class="m" font-size="17" fill="#d01884">p</tspan><tspan class="m" font-size="12" baseline-shift="sub" fill="#d01884">f</tspan></text>
+
+  <!-- c transversal ........................................................................ -->
+  <rect x="544" y="6" width="282" height="418" rx="14" class="panel" style="fill:#fdf0ea;stroke:#e9a68c"/>
+  <text x="560" y="36" class="head"><tspan class="num">c</tspan><tspan dx="8">One number per pencil</tspan></text>
+  <text class="body"><tspan x="560" y="74">Any line crossing the four planes</tspan><tspan x="560" y="95">(dashed in b) meets them in four points:</tspan></text>
+    <line x1="572.0" y1="150.0" x2="800.0" y2="150.0" stroke="#5f6368" stroke-width="2" stroke-dasharray="6 4"/>
+  <circle cx="594.6" cy="150.0" r="6.5" fill="#ffffff" stroke="#1a73e8" stroke-width="3"/>
+  <text x="588.6" y="180.0"><tspan class="m" font-size="17" fill="#1a73e8">c</tspan><tspan class="r" font-size="17" fill="#1a73e8">′</tspan></text>
+  <circle cx="665.4" cy="150.0" r="6.5" fill="#ffffff" stroke="#188038" stroke-width="3"/>
+  <text x="659.4" y="180.0"><tspan class="m" font-size="17" fill="#188038">d</tspan><tspan class="r" font-size="17" fill="#188038">′</tspan></text>
+  <circle cx="713.9" cy="150.0" r="6.5" fill="#ffffff" stroke="#e8710a" stroke-width="3"/>
+  <text x="707.9" y="180.0"><tspan class="m" font-size="17" fill="#e8710a">e</tspan><tspan class="r" font-size="17" fill="#e8710a">′</tspan></text>
+  <circle cx="777.4" cy="150.0" r="6.5" fill="#ffffff" stroke="#d01884" stroke-width="3"/>
+  <text x="771.4" y="180.0"><tspan class="m" font-size="17" fill="#d01884">f</tspan><tspan class="r" font-size="17" fill="#d01884">′</tspan></text>
+  <text x="560" y="236"><tspan class="r" font-size="19">CR</tspan><tspan class="m" font-size="13" baseline-shift="sub">ij</tspan><tspan class="r" font-size="19">(</tspan><tspan class="m" font-size="19">c, d</tspan><tspan class="r" font-size="19">;&#160;</tspan><tspan class="m" font-size="19">e, f</tspan><tspan class="r" font-size="19">)&#160;=</tspan></text>
+  <text x="602" y="276"><tspan class="r" font-size="18">(</tspan><tspan class="m" font-size="18">e′</tspan><tspan class="r" font-size="18">−</tspan><tspan class="m" font-size="18">c′</tspan><tspan class="r" font-size="18">)(</tspan><tspan class="m" font-size="18">f′</tspan><tspan class="r" font-size="18">−</tspan><tspan class="m" font-size="18">d′</tspan><tspan class="r" font-size="18">)</tspan></text>
+  <line x1="598" y1="284" x2="738" y2="284" stroke="#202124" stroke-width="1.3"/>
+  <text x="602" y="308"><tspan class="r" font-size="18">(</tspan><tspan class="m" font-size="18">e′</tspan><tspan class="r" font-size="18">−</tspan><tspan class="m" font-size="18">d′</tspan><tspan class="r" font-size="18">)(</tspan><tspan class="m" font-size="18">f′</tspan><tspan class="r" font-size="18">−</tspan><tspan class="m" font-size="18">c′</tspan><tspan class="r" font-size="18">)</tspan></text>
+  <text x="746" y="292"><tspan class="r" font-size="19">=&#160;{{PENCIL_CR}}</tspan></text>
+  <text class="body"><tspan x="560" y="346">the same for every such line, and equal</tspan><tspan x="560" y="367">to <tspan class="r" font-size="16">[</tspan><tspan class="m" font-size="16">ijce</tspan><tspan class="r" font-size="16">][</tspan><tspan class="m" font-size="16">ijdf</tspan><tspan class="r" font-size="16">]&#160;/&#160;([</tspan><tspan class="m" font-size="16">ijcf</tspan><tspan class="r" font-size="16">][</tspan><tspan class="m" font-size="16">ijde</tspan><tspan class="r" font-size="16">])</tspan>.</tspan><tspan x="560" y="388">No frame and no point scale enter.</tspan></text>
+
+  <!-- d frame coordinates ................................................................... -->
+  <rect x="836" y="6" width="258" height="418" rx="14" class="panel"/>
+  <text x="852" y="36" class="head"><tspan class="num">d</tspan><tspan dx="8">Frame coordinates</tspan></text>
+  <text class="body"><tspan x="852" y="74">Put <tspan class="m" font-size="17">p</tspan><tspan class="r" font-size="12" baseline-shift="sub">1</tspan><tspan class="r" font-size="17">,…,</tspan><tspan class="m" font-size="17">p</tspan><tspan class="r" font-size="12" baseline-shift="sub">5</tspan> at <tspan class="m" font-size="17">e</tspan><tspan class="r" font-size="12" baseline-shift="sub">1</tspan><tspan class="r" font-size="17">,…,</tspan><tspan class="m" font-size="17">e</tspan><tspan class="r" font-size="12" baseline-shift="sub">4</tspan><tspan class="r" font-size="17">,</tspan></tspan><tspan x="852" y="97"><tspan class="r" font-size="17">(1,1,1,1)</tspan> and write <tspan class="m" font-size="17">p</tspan><tspan class="m" font-size="12" baseline-shift="sub">k</tspan><tspan class="r" font-size="17">&#160;=&#160;(</tspan><tspan class="m" font-size="17">x,y,z,w</tspan><tspan class="r" font-size="17">)</tspan>.</tspan></text>
+  <rect x="852" y="114" width="226" height="118" rx="10" fill="#f1f3f4"/>
+  <text x="866" y="146"><tspan class="r" font-size="18">CR</tspan><tspan class="r" font-size="12" baseline-shift="sub">12</tspan><tspan class="r" font-size="18">(3,4;&#160;5,</tspan><tspan class="m" font-size="18">k</tspan><tspan class="r" font-size="18">)&#160;=&#160;</tspan><tspan class="m" font-size="18">z/w</tspan></text>
+  <text x="866" y="180"><tspan class="r" font-size="18">CR</tspan><tspan class="r" font-size="12" baseline-shift="sub">13</tspan><tspan class="r" font-size="18">(2,4;&#160;5,</tspan><tspan class="m" font-size="18">k</tspan><tspan class="r" font-size="18">)&#160;=&#160;</tspan><tspan class="m" font-size="18">y/w</tspan></text>
+  <text x="866" y="214"><tspan class="r" font-size="18">CR</tspan><tspan class="r" font-size="12" baseline-shift="sub">23</tspan><tspan class="r" font-size="18">(1,4;&#160;5,</tspan><tspan class="m" font-size="18">k</tspan><tspan class="r" font-size="18">)&#160;=&#160;</tspan><tspan class="m" font-size="18">x/w</tspan></text>
+  <text class="body"><tspan x="852" y="266">These <tspan class="r" font-size="16">3(</tspan><tspan class="m" font-size="16">n</tspan><tspan class="r" font-size="16">&#160;−&#160;5)</tspan> pencil cross-ratios</tspan><tspan x="852" y="287">are the projective coordinates of</tspan><tspan x="852" y="308">the other points, so the family has</tspan><tspan x="852" y="329">rank <tspan class="r" font-size="16">3</tspan><tspan class="m" font-size="16">n</tspan><tspan class="r" font-size="16">&#160;−&#160;15</tspan> for every <tspan class="m" font-size="16">n</tspan>.</tspan></text>
+  <text class="small"><tspan x="852" y="366">Checked in SymPy and Macaulay2,</tspan><tspan x="852" y="384">and proved in Lean (frame_cr).</tspan></text>
+</svg>

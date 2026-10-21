@@ -1,0 +1,16 @@
+# Experiment: null calibration: pre-registered decisions
+# Seed: 33000000
+# Backend: cpp
+# Code commit: 4d4135d
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+Item,Value,Rule
+"tuple rows with a numerical failure (left out, logged in null_calibration_tuples.csv)",10,recorded deviation (null calibration)
+kappa_max (calibration half),,"largest grid value with calibration size in [4%, 6%]"
+ungated calibration size (hat),0.031556195965417866,"in [3.5%, 6.5%] -> gate removed (ablation)"
+"f_ratio (sigma-free): size(0.05) all sigma in [3.5%, 6.5%]",False,"[0.035, 0.0467, 0.0417, 0.14]"
+"split_glrt chi2_{3n-15} (known sigma): size(0.05) all sigma in [3.5%, 6.5%]",False,"[0.0517, 0.0433, 0.0433, 0.1417]"
+"glrt_all chi2_{9n-51} (known sigma): size(0.05) all sigma in [3.5%, 6.5%]",False,"[0.05, 0.06, 0.0483, 0.1667]"
+misspecified-sigma control fires (size >= 10%),True,"[1.0, 1.0, 1.0, 0.9117]"
+tuple misspecified-sigma control fires (size >= 10%),True,"[0.5747, 0.534, 0.4887, 0.4883]"
+"conformal, exchangeable target: size(0.05) in [3.5%, 6.5%] (each statistic)",False,"[0.0933, 0.07, 0.0567, 0.12, 0.0833, 0.04, 0.0333]"
+"Mondrian conformal: size(0.05) in [3.5%, 6.5%] at every sigma (each statistic)",False,14 of 28 outside

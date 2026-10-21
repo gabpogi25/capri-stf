@@ -1,0 +1,30 @@
+# commit 2a900d4; Python 3.13.16, numpy 2.5.3, scipy 1.18.1, sympy 1.14.0; seed 20261018
+W1  Prop 3.5: frame identities CR_12(3,4;5,k) = z/w, CR_13(2,4;5,k) = y/w, CR_23(1,4;5,k) = x/w (symbolic)
+  [PASS] the three identities hold as rational functions  ((z/w, y/w, x/w))
+  [PASS] control: CR_12(3,5;4,k) is not z/w  ((w - z)/w)
+  [PASS] brackets in the standard frame: [234k] = -x, [134k] = y, [124k] = -z, [123k] = w  ((-x, y, -z, w))
+W2  Prop 3.5: in a general frame, the frame cross-ratios are the frame-coordinate ratios (exact over Q)
+  [PASS] 5 configurations of 9 points: all 12 frame cross-ratios match
+  [PASS] control: a wrong pairing CR_12(3,5;4,k) does not match z/w
+W3  Thm 3.7: the frame cross-ratios have Jacobian rank 3n - 15 over Q (exact); full family for n <= 8
+  [PASS] n = 6: frame rows rank 3 = 3n - 15 = 3; with 12 full-family rows 3; control, 3 pencils through one line: rank 1 = n - 5 < 3n - 15
+  [PASS] n = 6: the full family (45 pencils) has rank 3 = 3n - 15
+  [PASS] n = 7: frame rows rank 6 = 3n - 15 = 6; with 12 full-family rows 6; control, 6 pencils through one line: rank 2 = n - 5 < 3n - 15
+  [PASS] n = 7: the full family (315 pencils) has rank 6 = 3n - 15
+  [PASS] n = 8: frame rows rank 9 = 3n - 15 = 9; with 12 full-family rows 9; control, 9 pencils through one line: rank 3 = n - 5 < 3n - 15
+  [PASS] n = 8: the full family (1260 pencils) has rank 9 = 3n - 15
+  [PASS] n = 9: frame rows rank 12 = 3n - 15 = 12; with 12 full-family rows 12; control, 12 pencils through one line: rank 4 = n - 5 < 3n - 15
+  [PASS] n = 10: frame rows rank 15 = 3n - 15 = 15; with 12 full-family rows 15; control, 15 pencils through one line: rank 5 = n - 5 < 3n - 15
+  [PASS] n = 12: frame rows rank 21 = 3n - 15 = 21; with 12 full-family rows 21; control, 21 pencils through one line: rank 7 = n - 5 < 3n - 15
+  [PASS] n = 15: frame rows rank 30 = 3n - 15 = 30; with 12 full-family rows 30; control, 30 pencils through one line: rank 10 = n - 5 < 3n - 15
+  [PASS] n = 20: frame rows rank 45 = 3n - 15 = 45; with 12 full-family rows 45; control, 45 pencils through one line: rank 15 = n - 5 < 3n - 15
+  [PASS] n = 25: frame rows rank 60 = 3n - 15 = 60; with 12 full-family rows 60; control, 60 pencils through one line: rank 20 = n - 5 < 3n - 15
+  [PASS] n = 30: frame rows rank 75 = 3n - 15 = 75; with 12 full-family rows 75; control, 75 pencils through one line: rank 25 = n - 5 < 3n - 15
+W4  Lemma 3.6: the stabiliser of a configuration with p1..p5 in general position has dimension 1
+  [PASS] random integer configurations, n = 5, 6, 8: dimensions [1, 1, 1]
+  [PASS] control: with p5..p7 on the plane of p1, p2, p3 the dimension is 2 > 1
+W5  Remark 3.9: the 45 pencil cross-ratios of six points as functions of the frame coordinates of point 6
+  [PASS] 45 closed forms agree with exact evaluation at 5 random points
+  [PASS] control: all 45 formulas with c and d swapped (the reciprocal) disagree with exact evaluation
+      distinct closed forms (45): x/w; x/y; x/z; y/w; y/z; z/w; (x - y)/x; (x - z)/x; (y - z)/y; (-w + x)/x; (-w + y)/y; (-w + z)/z; -(x - y)/y; -(x - z)/z; -(y - z)/z; -(-w + x)/w; -(-w + y)/w; -(-w + z)/w; (x - y)/(x - z); (x - z)/(y - z); (x - y)/(-w + x); (x - z)/(-w + x); (y - z)/(-w + y); -(x - y)/(y - z); (-w + x)/(-w + y); (-w + x)/(-w + z); (-w + y)/(-w + z); -(x - y)/(-w + y); -(x - z)/(-w + z); -(y - z)/(-w + z); y*(x - z)/(x*(y - z)); z*(x - y)/(y*(x - z)); -z*(x - y)/(x*(y - z)); w*(x - y)/(y*(-w + x)); w*(x - z)/(z*(-w + x)); w*(y - z)/(z*(-w + y)); -w*(x - y)/(x*(-w + y)); -w*(x - z)/(x*(-w + z)); -w*(y - z)/(y*(-w + z)); y*(-w + x)/(x*(-w + y)); z*(-w + x)/(x*(-w + z)); z*(-w + y)/(y*(-w + z)); (-w + y)*(x - z)/((-w + x)*(y - z)); (-w + z)*(x - y)/((-w + y)*(x - z)); -(-w + z)*(x - y)/((-w + x)*(y - z))
+ALL CHECKS PASSED

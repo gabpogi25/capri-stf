@@ -1,0 +1,28 @@
+# Python 3.13.16, sympy 1.14.0; commit d071e86; command: python experiments/symbolic/verify_plucker.py
+1. Sigma relations
+  Sigma_1 = [1234][1256] - [1235][1246] + [1236][1245]: 0 (identity holds)
+  Sigma_2 = [1345][2346] - [1346][2345] - [1234][3456]: 0 (identity holds)
+  Sigma_3 = [1256][3456] - [1356][2456] + [1456][2356]: 0 (identity holds)
+2. The 15 Grassmann-Plucker relations
+  {1,2}: 0 (identity holds)
+  {1,3}: 0 (identity holds)
+  {1,4}: 0 (identity holds)
+  {1,5}: 0 (identity holds)
+  {1,6}: 0 (identity holds)
+  {2,3}: 0 (identity holds)
+  {2,4}: 0 (identity holds)
+  {2,5}: 0 (identity holds)
+  {2,6}: 0 (identity holds)
+  {3,4}: 0 (identity holds)
+  {3,5}: 0 (identity holds)
+  {3,6}: 0 (identity holds)
+  {4,5}: 0 (identity holds)
+  {4,6}: 0 (identity holds)
+  {5,6}: 0 (identity holds)
+3. Blindness of Sigma_1..3: b* = e_1234 + e_1456
+  Sigma_1, Sigma_2, Sigma_3 at b*: 0, 0, 0;  {1,4} relation at b*: 1
+4. Codimension of 'm points coplanar' (rank <= 3 of the 4 x m matrix)
+  m=4 (Boundary): codimension 1 (expected 1)
+  m=5 (Compound): codimension 2 (expected 2)
+  m=6 (Critical): codimension 3 (expected 3)
+ALL CHECKS PASSED

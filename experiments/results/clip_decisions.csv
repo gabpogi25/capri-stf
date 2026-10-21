@@ -1,0 +1,29 @@
+# Experiment: clip aggregation: pre-registered decisions and descriptives
+# Seed: 34000000
+# Backend: cpp
+# Code commit: 4d4135d
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+Item,Value,Rule
+"pencil_q10: eligible aggregators (clip size in [3.5%, 6.5%])",none,
+pencil_q10: e-product size (valid iff 0 < size <= 6.5%),0.02666666666666667,anytime-valid
+"glrt_all: eligible aggregators (clip size in [3.5%, 6.5%])","fisher_naive, cct, hmp_raw, bonferroni, block_fisher",
+glrt_all: V6 winner (highest min power jitter/drift/warp),fisher_naive (1.000),
+glrt_all: e-product size (valid iff 0 < size <= 6.5%),0.01,anytime-valid
+"sampson_mean: eligible aggregators (clip size in [3.5%, 6.5%])",cct,
+sampson_mean: V6 winner (highest min power jitter/drift/warp),cct (0.840),
+sampson_mean: e-product size (valid iff 0 < size <= 6.5%),0.006666666666666667,anytime-valid
+"f_ratio: eligible aggregators (clip size in [3.5%, 6.5%])","fisher_naive, cct, bonferroni, block_fisher",
+f_ratio: V6 winner (highest min power jitter/drift/warp),bonferroni (0.010),
+f_ratio: e-product size (valid iff 0 < size <= 6.5%),0.0033333333333333335,anytime-valid
+K-sweep window power (drift at d*),"{100: 0.2, 300: 0.312, 1000: 0.45, 3000: 0.586, 10000: 0.614, 50000: 0.624}",
+"K* (smallest K within 0.01 of K = 50,000)",10000,
+split AUC jitter: interleaved vs contiguous,0.9894 vs 0.9898,descriptive
+split AUC drift: interleaved vs contiguous,0.9375 vs 0.9927,descriptive
+split AUC warp: interleaved vs contiguous,0.7972 vs 0.9336,descriptive
+window-0 AUC drift: interleaved vs U-statistic,0.9329 vs 0.9826,descriptive
+CUSUM h (ARL0 target 50 on null clips 0-149),2.25,
+CUSUM ARL0 on null clips 150-299,35.294117647058826,within +/-30% of 50
+CUSUM median delay after change (windows; inf = not within clip),1.0,<= 2
+CUSUM detected within clip,0.97,descriptive
+e-process median delay (from window 4),3.0,descriptive
+e-process false-alarm rate on null clips (any alarm in 8 windows),0.03,<= 0.05 (anytime-valid)

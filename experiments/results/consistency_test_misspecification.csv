@@ -1,0 +1,31 @@
+# Experiment: consistency_test analysis: misspecification
+# Seed: 81900000
+# Backend: cpp
+# Code commit: c207214
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+f,Statistic,Threshold,Size
+0.5,pencil_q10,empirical,1.0
+0.5,std_tyler_q10,empirical,1.0
+0.5,split_glrt,empirical,1.0
+0.5,sampson_mean,empirical,1.0
+0.5,split_glrt,chi2,1.0
+0.75,pencil_q10,empirical,0.6925
+0.75,std_tyler_q10,empirical,0.7225
+0.75,split_glrt,empirical,0.9825
+0.75,sampson_mean,empirical,0.99
+0.75,split_glrt,chi2,0.98
+1.0,pencil_q10,empirical,0.055
+1.0,std_tyler_q10,empirical,0.06
+1.0,split_glrt,empirical,0.0725
+1.0,sampson_mean,empirical,0.015
+1.0,split_glrt,chi2,0.0475
+1.5,pencil_q10,empirical,0.0
+1.5,std_tyler_q10,empirical,0.0
+1.5,split_glrt,empirical,0.0
+1.5,sampson_mean,empirical,0.0
+1.5,split_glrt,chi2,0.0
+2.0,pencil_q10,empirical,0.0
+2.0,std_tyler_q10,empirical,0.0
+2.0,split_glrt,empirical,0.0
+2.0,sampson_mean,empirical,0.0
+2.0,split_glrt,chi2,0.0

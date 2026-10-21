@@ -1,0 +1,10 @@
+# Experiment: Real reconstruction, per-pipeline summary (descriptive)
+# Seed: 86500000
+# Backend: cpp
+# Code commit: 018c7ba
+# Python 3.12.10, numpy 2.5.4, pandas 3.0.6
+Pipeline,N_Runs,N_Failures,mAA_at_10_Mean,Registered_Fraction,Median_Pose_Error_Mean
+sift,69,0,0.3742711038468655,0.645872715816005,1.0041905671913125
+superglue,69,0,0.6097360516069427,0.8815374921235035,22.788178238481617
+superglue_ransac,69,0,0.6277061693062524,0.8783868935097668,21.538938946780913
+superglue_ransac_capri,69,0,0.6250281262570502,0.8802772526780088,22.718029533231512

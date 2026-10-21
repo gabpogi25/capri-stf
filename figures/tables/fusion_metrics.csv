@@ -1,0 +1,3 @@
+Classifier,N,Positive_Fraction,Probability_Min,Probability_Max,TN,FP,FN,TP,Precision,Recall,F1,Balanced_Accuracy,MCC,ROC_AUC,Average_Precision
+Neural Confidence Fusion (threshold 0.5),500,0.952,0.9413542151451112,0.9607216119766236,0,24,0,476,0.952,1,0.9754098360655737,0.5,0,0.6097689075630253,0.9728007699595461
+Majority class (always 1),500,0.952,0.9413542151451112,0.9607216119766236,0,24,0,476,0.952,1,0.9754098360655737,0.5,0,0.5,0.952

@@ -1,0 +1,49 @@
+# Experiment: Real-data pencil test: sizes, powers, AUCs
+# Seed: 87500000
+# Backend: cpp
+# Code commit: 8ee0aea
+# Python 3.12.10, numpy 2.5.4, pandas 3.0.6
+Statistic,Injection,Size,Size_Valid,N_Test_Windows,N_Test_Scenes,Coverage,Power,AUC,Transfer_From,Transfer_To
+pencil_q10,none,0.016853932584269662,False,534,10.0,0.9550561797752809,,,,
+pencil_q10,jitter,,False,534,10.0,,,,,
+pencil_q10,drift,,False,534,10.0,,,,,
+pencil_q10,warp,,False,534,10.0,,,,,
+pencil_q10,swap,,False,534,10.0,,,,,
+acat,none,0.06741573033707865,False,534,10.0,0.9550561797752809,,,,
+acat,jitter,,False,534,10.0,,,,,
+acat,drift,,False,534,10.0,,,,,
+acat,warp,,False,534,10.0,,,,,
+acat,swap,,False,534,10.0,,,,,
+sampson_mean,none,0.1254681647940075,False,534,10.0,0.9550561797752809,,,,
+sampson_mean,jitter,,False,534,10.0,,,,,
+sampson_mean,drift,,False,534,10.0,,,,,
+sampson_mean,warp,,False,534,10.0,,,,,
+sampson_mean,swap,,False,534,10.0,,,,,
+combination,none,0.07303370786516854,False,534,10.0,0.9550561797752809,,,,
+combination,jitter,,False,534,10.0,,,,,
+combination,drift,,False,534,10.0,,,,,
+combination,warp,,False,534,10.0,,,,,
+combination,swap,,False,534,10.0,,,,,
+split_glrt,none,0.4737827715355805,False,534,10.0,0.9550561797752809,,,,
+split_glrt,jitter,,False,534,10.0,,,,,
+split_glrt,drift,,False,534,10.0,,,,,
+split_glrt,warp,,False,534,10.0,,,,,
+split_glrt,swap,,False,534,10.0,,,,,
+pencil_q10,none,0.03409090909090909,,88,,,,,imc2024,ETs
+acat,none,0.1590909090909091,,88,,,,,imc2024,ETs
+sampson_mean,none,0.4772727272727273,,88,,,,,imc2024,ETs
+pencil_q10,none,0.023809523809523808,,126,,,,,imc2024,imc2023
+acat,none,0.03968253968253968,,126,,,,,imc2024,imc2023
+sampson_mean,none,0.0873015873015873,,126,,,,,imc2024,imc2023
+pencil_q10,none,0.0375,,320,,,,,imc2024,pt
+acat,none,0.08125,,320,,,,,imc2024,pt
+sampson_mean,none,0.084375,,320,,,,,imc2024,pt
+pencil_q10,none,0.022727272727272728,,88,,,,,pt,ETs
+acat,none,0.1590909090909091,,88,,,,,pt,ETs
+sampson_mean,none,0.4318181818181818,,88,,,,,pt,ETs
+pencil_q10,none,0.007936507936507936,,126,,,,,pt,imc2023
+acat,none,0.023809523809523808,,126,,,,,pt,imc2023
+sampson_mean,none,0.0873015873015873,,126,,,,,pt,imc2023
+pencil_q10,none,0.01875,,320,,,,,pt,pt
+acat,none,0.05,,320,,,,,pt,pt
+sampson_mean,none,0.078125,,320,,,,,pt,pt

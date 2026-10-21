@@ -1,0 +1,17 @@
+# Experiment: logistic fusion experiment: logistic Confidence Fusion, hypotheses
+# Seed: 42019
+# Backend: cpp
+# Code commit: 4d4135d
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+hypothesis,comparison,delta_mcc,ci_low,ci_high,decision
+H1a,M1 - C0,0.4477451069611588,0.426573460491559,0.46826036774039603,holds
+H1b,M1 - C1*,0.0583373772805843,0.046634801133569596,0.07082934343293544,holds
+H1c,M1 - C2,0.454389527540392,0.43258175761315193,0.4765492216874432,holds
+H1,all three components,,,,supported
+H2,M1 - C3 (this 3-input OR gate),0.02190943170754933,0.012814126747737515,0.03128399242696725,supported
+H3,M2 - M1,-0.015188279806623295,-0.02261925479392968,-0.0074261638347576375,differs
+D,M1-D - C0-D (descriptive),0.43698204033522026,0.4126123862972745,0.46027654552347674,benefit shown
+D-C1*,M1-D - C1*-D (descriptive),0.005647706831941046,-0.00540575881110196,0.016812544717546972,no difference shown
+D-C3,M1-D - C3-D (descriptive),0.004437770660085327,-0.00520251189572433,0.014365565399548388,no difference shown
+rho,M1 - M1-no-rho (descriptive),0.038127242049889376,0.028242001733766904,0.048645038658046175,difference shown
+GOAL row 10,case A,,,,"Met (synthetic data only, with A and B given in a common, known unit chart; not tested on real images or on independently gauged reconstructions)"

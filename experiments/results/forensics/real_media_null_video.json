@@ -1,0 +1,35 @@
+{
+  "media": "video",
+  "nominal_alpha": 0.05,
+  "band": [
+    0.035,
+    0.065
+  ],
+  "n_train_items": 300,
+  "n_val_items": 300,
+  "n_val_windows": 152,
+  "kappa_max": null,
+  "rejection_rate_empirical_null": 0.019736842105263157,
+  "ks_to_uniform": 0.1842453355611251,
+  "ks_p": 5.4653303797371584e-05,
+  "rejection_rate_chi2_diagnostic": null,
+  "passed": false,
+  "n_null_values": 188,
+  "min_attainable_p": 0.005291005291005291,
+  "provenance": {
+    "git_commit": "1e902a9",
+    "config_hash": "09e31f4ff8d4c02d",
+    "seed": 88100001,
+    "versions": {
+      "python": "3.12.10",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "cv2": "5.0.0",
+      "sklearn": "1.9.1",
+      "pandas": "3.0.6"
+    },
+    "inputs": {
+      "data\\manifests\\videos_v2_batch1.csv": "94580b258af0740edff972d292a4a04d52576a0b676b8d8f500c39e35ffd2163"
+    }
+  }
+}

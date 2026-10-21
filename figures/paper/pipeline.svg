@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CAPRI graphical abstract: the computational pipeline. Layout made for Inkscape; edit this template,
+     not abstract_pipeline.svg. Runtimes come from experiments/results/pencil_runtime.csv (one CPU
+     core, median of 5 runs) and the photo panels from experiments/results/abstract_photo_*.csv. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1640" height="802" viewBox="0 68 1640 802">
+  <defs>
+    <style>
+      text { font-family: Roboto, sans-serif; }
+      .title { font-size: 34px; font-weight: 700; fill: #1f1f1f; }
+      .sub { font-size: 20px; fill: #5f6368; }
+      .head { font-size: 19px; font-weight: 500; fill: #202124; }
+      .num { font-size: 19px; font-weight: 700; fill: #c5532f; }
+      .body { font-size: 14.5px; fill: #3c4043; }
+      .cap { font-size: 14.5px; fill: #5f6368; }
+      .time { font-size: 14px; fill: #c5532f; font-weight: 500; }
+      .m { font-family: 'Latin Modern Roman', serif; font-style: italic; fill: #202124; }
+      .r { font-family: 'Latin Modern Roman', serif; font-style: normal; }
+      .panel { fill: #ffffff; stroke: #d5d7da; stroke-width: 2; }
+      .capri { fill: #fdf0ea; stroke: #e07a5f; stroke-width: 3; }
+      .module { fill: #ffffff; stroke: #e9a68c; stroke-width: 1.8; }
+      .frameA { fill: none; stroke: #1f77ff; stroke-width: 4; stroke-linejoin: round; }
+      .frameB { fill: none; stroke: #ff2a1a; stroke-width: 4; stroke-linejoin: round; }
+    </style>
+    <path id="arrow" d="M0,-7 H22 V-16 L40,0 L22,16 V7 H0 Z" fill="#ffffff" stroke="#9aa0a6"
+          stroke-width="2.6" stroke-linejoin="round"/>
+    <filter id="grey"><feColorMatrix type="saturate" values="0.1"/></filter>
+  </defs>
+  <rect width="1640" height="870" fill="#ffffff"/>
+
+  <!-- stage row ............................................................................ -->
+  <rect x="30" y="80" width="225" height="350" rx="16" class="panel"/>
+  <text x="48" y="114" class="head"><tspan class="num">1</tspan><tspan dx="9">Images</tspan></text>
+  <g transform="translate(52,170) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="../abstracts/photos/sacre_coeur/02928139_3448003521.jpg" width="150" height="108" preserveAspectRatio="xMidYMid slice"/><rect width="150" height="108" class="frameA"/></g>
+  <g transform="translate(80,186) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="../abstracts/photos/sacre_coeur/51091044_3486849416.jpg" width="150" height="108" preserveAspectRatio="xMidYMid slice"/><rect width="150" height="108" class="frameB"/></g>
+  <g transform="translate(108,202) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="../abstracts/photos/sacre_coeur/71295362_4051449754.jpg" width="150" height="108" preserveAspectRatio="xMidYMid slice"/><rect width="150" height="108" class="frameA"/></g>
+  <text class="cap"><tspan x="48" y="370">Uncalibrated photos, split into</tspan><tspan x="48" y="392">view subsets <tspan class="m" font-size="17" fill="#1f77ff">V</tspan><tspan class="m" font-size="11" baseline-shift="sub" fill="#1f77ff">A</tspan> and <tspan class="m" font-size="17" fill="#ff2a1a">V</tspan><tspan class="m" font-size="11" baseline-shift="sub" fill="#ff2a1a">B</tspan></tspan></text>
+
+  <use xlink:href="#arrow" transform="translate(258,250)"/>
+
+  <rect x="300" y="80" width="225" height="350" rx="16" class="panel"/>
+  <text x="318" y="114" class="head"><tspan class="num">2</tspan><tspan dx="9">Matches</tspan></text>
+  <image xlink:href="../abstracts/assets/match_pair.png" x="310" y="190" width="205" height="101.2"/>
+  <text class="cap"><tspan x="318" y="370">SIFT or SuperGlue features;</tspan><tspan x="318" y="392">fundamental matrix (MAGSAC)</tspan></text>
+
+  <use xlink:href="#arrow" transform="translate(528,250)"/>
+
+  <rect x="570" y="80" width="225" height="350" rx="16" class="panel"/>
+  <text x="588" y="114" class="head"><tspan class="num">3</tspan><tspan dx="9">Cameras and points</tspan></text>
+  <image xlink:href="../abstracts/assets/cloud_cameras.png" x="578" y="160" width="209" height="156.8"/>
+  <text class="cap"><tspan x="588" y="370">Projective SfM, bundle</tspan><tspan x="588" y="392">adjustment, Tyler frame</tspan></text>
+
+  <use xlink:href="#arrow" transform="translate(798,250)"/>
+
+  <rect x="840" y="80" width="225" height="350" rx="16" class="capri"/>
+  <text x="858" y="114" class="head"><tspan class="num">4</tspan><tspan dx="9" font-weight="700" fill="#c5532f">CAPRI layer</tspan></text>
+  <g class="body">
+    <rect x="858" y="140" width="189" height="44" rx="10" class="module"/><text x="874" y="168"><tspan class="num" font-size="15">1</tspan><tspan dx="8">Conditioning gate</tspan></text>
+    <rect x="858" y="194" width="189" height="44" rx="10" class="module"/><text x="874" y="222"><tspan class="num" font-size="15">2</tspan><tspan dx="8">Tuple selection</tspan></text>
+    <rect x="858" y="248" width="189" height="44" rx="10" class="module"/><text x="874" y="276"><tspan class="num" font-size="15">3</tspan><tspan dx="8">Strata</tspan></text>
+    <rect x="858" y="302" width="189" height="44" rx="10" class="module"/><text x="874" y="330"><tspan class="num" font-size="15">4</tspan><tspan dx="8">Consistency test</tspan></text>
+  </g>
+  <text class="cap"><tspan x="858" y="376">Milliseconds per scene;</tspan><tspan x="858" y="398">details below</tspan></text>
+
+  <use xlink:href="#arrow" transform="translate(1068,250)"/>
+
+  <rect x="1110" y="80" width="225" height="350" rx="16" class="panel"/>
+  <text x="1128" y="114" class="head"><tspan class="num">5</tspan><tspan dx="9">Certified points</tspan></text>
+  <image xlink:href="../abstracts/assets/photo_A_scores.png" x="1166" y="132" width="113" height="169.4"/>
+  <defs><linearGradient id="score" x1="0" x2="1"><stop offset="0" stop-color="#2bd92b"/><stop offset="0.5" stop-color="#ffd21a"/><stop offset="1" stop-color="#ff2a1a"/></linearGradient></defs>
+  <rect x="1150" y="310" width="145" height="8" rx="4" fill="url(#score)"/>
+  <text x="1150" y="334" class="cap" font-size="12.5">low</text><text x="1295" y="334" class="cap" font-size="12.5" text-anchor="end">high pencil score</text>
+  <text class="cap"><tspan x="1128" y="370">Median score: 0.83 on jittered</tspan><tspan x="1128" y="392">points, 0.72 on the others;</tspan><tspan x="1128" y="414">plus abstentions and <tspan class="m" font-size="17" fill="#5f6368">S</tspan></tspan></text>
+
+  <use xlink:href="#arrow" transform="translate(1338,250)"/>
+
+  <rect x="1380" y="80" width="225" height="350" rx="16" fill="#f8f9fa" stroke="#c4c7cb" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="1398" y="114" class="head" fill="#5f6368"><tspan class="num" fill="#9aa0a6">6</tspan><tspan dx="9" fill="#5f6368">Dense MVS</tspan></text>
+  <image xlink:href="../abstracts/photos/sacre_coeur/93341989_396310999.jpg" x="1400" y="160" width="185" height="138.7" opacity="0.55" filter="url(#grey)"/>
+  <text class="cap"><tspan x="1398" y="370">Unchanged, run on the</tspan><tspan x="1398" y="392">certified points</tspan></text>
+
+  <!-- inside the CAPRI layer ............................................................... -->
+  <path d="M952,430 V462" stroke="#e07a5f" stroke-width="2.5" stroke-dasharray="6 5" fill="none"/>
+  <rect x="30" y="462" width="1575" height="300" rx="18" fill="#fdf6f2" stroke="#e07a5f" stroke-width="2.5" stroke-dasharray="9 6"/>
+  <text x="52" y="496" class="head" fill="#c5532f" font-weight="700">Inside the CAPRI layer</text>
+
+  <rect x="48" y="512" width="374" height="232" rx="14" class="module"/>
+  <text x="66" y="542" class="head"><tspan class="num">1</tspan><tspan dx="9">Conditioning gate</tspan></text>
+  <text class="body">
+    <tspan x="66" y="572"><tspan class="m" font-size="17">κ</tspan><tspan class="m" font-size="11" baseline-shift="sub">J</tspan><tspan class="r" font-size="17">&#160;=&#160;max</tspan><tspan class="m" font-size="11" baseline-shift="sub">k</tspan><tspan class="r" font-size="17">&#160;‖∇ log|</tspan><tspan class="m" font-size="17">J</tspan><tspan class="m" font-size="11" baseline-shift="sub">k</tspan><tspan class="r" font-size="17">|‖</tspan> from the rows of <tspan class="m" font-size="17">M</tspan><tspan class="r" font-size="11" baseline-shift="super">−1</tspan></tspan>
+    <tspan x="66" y="594">(Jacobi's formula), 15 inverses per tuple.</tspan>
+    <tspan x="66" y="616">Keep tuples with <tspan class="m" font-size="17">κ</tspan><tspan class="m" font-size="11" baseline-shift="sub">J</tspan><tspan class="r" font-size="17">&#160;≤&#160;</tspan><tspan class="m" font-size="17">κ</tspan><tspan class="r" font-size="11" baseline-shift="sub">max</tspan>; singular brackets</tspan>
+    <tspan x="66" y="638">(<tspan class="r" font-size="17">&lt;&#160;10</tspan><tspan class="r" font-size="11" baseline-shift="super">−12</tspan>) get <tspan class="m" font-size="17">κ</tspan><tspan class="m" font-size="11" baseline-shift="sub">J</tspan><tspan class="r" font-size="17">&#160;=&#160;∞</tspan>.</tspan>
+  </text>
+  <text class="time"><tspan x="66" y="700">10,000 tuples: 3.8 ms (C++),</tspan><tspan x="66" y="720">132 ms (NumPy), 2.0 s (Python loop)</tspan></text>
+
+  <rect x="438" y="512" width="374" height="232" rx="14" class="module"/>
+  <text x="456" y="542" class="head"><tspan class="num">2</tspan><tspan dx="9">Tuple selection</tspan></text>
+  <text class="body">
+    <tspan x="456" y="572">Greedy maximum coverage over <tspan class="m" font-size="17">κ</tspan>-feasible</tspan>
+    <tspan x="456" y="594">tuples. Coverage is monotone submodular,</tspan>
+    <tspan x="456" y="616">so greedy reaches <tspan class="r" font-size="17">≥&#160;(1&#160;−&#160;1/</tspan><tspan class="m" font-size="17">e</tspan><tspan class="r" font-size="17">)&#160;OPT</tspan>.</tspan>
+    <tspan x="456" y="638">Batched gains from a boolean membership</tspan>
+    <tspan x="456" y="660">matrix; ties go to the smaller <tspan class="m" font-size="17">κ</tspan><tspan class="m" font-size="11" baseline-shift="sub">J</tspan>.</tspan>
+  </text>
+  <text class="time"><tspan x="456" y="700"><tspan class="m" font-size="17" fill="#c5532f">n</tspan><tspan class="r" font-size="17" fill="#c5532f">&#160;=&#160;30</tspan>, 10,000 candidates: 38.5 ms</tspan><tspan x="456" y="720">(batched) vs 2.1 s (per tuple)</tspan></text>
+
+  <rect x="828" y="512" width="374" height="232" rx="14" class="module"/>
+  <text x="846" y="542" class="head"><tspan class="num">3</tspan><tspan dx="9">Strata</tspan></text>
+  <text class="body">
+    <tspan x="846" y="572">Per selected tuple: the size of its largest</tspan>
+    <tspan x="846" y="594">coplanar subset (rank classifier). The coplanar</tspan>
+    <tspan x="846" y="616">strata have codimension <tspan class="m" font-size="17">m</tspan><tspan class="r" font-size="17">&#160;−&#160;3</tspan>.</tspan>
+    <tspan x="846" y="648" font-weight="700">Critical tuple ⇒ rejected.</tspan>
+    <tspan x="846" y="670">The consistency test abstains on (near)</tspan>
+    <tspan x="846" y="692">planar point sets.</tspan>
+  </text>
+
+  <rect x="1218" y="512" width="370" height="232" rx="14" class="module"/>
+  <text x="1236" y="542" class="head"><tspan class="num">4</tspan><tspan dx="9">Consistency test</tspan></text>
+  <text class="body">
+    <tspan x="1236" y="572">Reconstruct <tspan class="m" font-size="17">V</tspan><tspan class="m" font-size="11" baseline-shift="sub">A</tspan> and <tspan class="m" font-size="17">V</tspan><tspan class="m" font-size="11" baseline-shift="sub">B</tspan> separately. The</tspan>
+    <tspan x="1236" y="594"><tspan class="r" font-size="17">(</tspan><tspan class="m" font-size="17">n</tspan><tspan class="r" font-size="17">&#160;choose&#160;4)</tspan> log-dets give every <tspan class="r" font-size="17">log|CR</tspan><tspan class="m" font-size="11" baseline-shift="sub">t</tspan><tspan class="r" font-size="17">|</tspan></tspan>
+    <tspan x="1236" y="616">by table lookup (<tspan class="m" font-size="17">n</tspan><tspan class="r" font-size="17">&#160;=&#160;12: 495 → 41,580</tspan>).</tspan>
+    <tspan x="1236" y="638">For <tspan class="m" font-size="17">n</tspan><tspan class="r" font-size="17">&#160;&gt;&#160;12</tspan>: 50,000 uniform pencils; the sampled</tspan>
+    <tspan x="1236" y="660"><tspan class="m" font-size="17">Q</tspan><tspan class="r" font-size="11" baseline-shift="sub">0.1</tspan> lies in <tspan class="r" font-size="17">[</tspan><tspan class="m" font-size="17">Q</tspan><tspan class="r" font-size="11" baseline-shift="sub">0.09</tspan><tspan class="r" font-size="17">,&#160;</tspan><tspan class="m" font-size="17">Q</tspan><tspan class="r" font-size="11" baseline-shift="sub">0.11</tspan><tspan class="r" font-size="17">]</tspan> w.p. <tspan class="r" font-size="17">≥&#160;1&#160;−&#160;10</tspan><tspan class="r" font-size="11" baseline-shift="super">−4</tspan> (DKW).</tspan>
+  </text>
+  <text class="time"><tspan x="1236" y="700">1.5 ms (<tspan class="m" font-size="17" fill="#c5532f">n</tspan><tspan class="r" font-size="17" fill="#c5532f">&#160;=&#160;12</tspan>), 15.0 ms (<tspan class="m" font-size="17" fill="#c5532f">n</tspan><tspan class="r" font-size="17" fill="#c5532f">&#160;=&#160;300</tspan>), C++</tspan></text>
+
+
+  <!-- implementation band ................................................................. -->
+  <rect x="30" y="782" width="1575" height="70" rx="16" fill="#f5f6f7"/>
+  <text class="body" font-size="15">
+    <tspan x="52" y="811"><tspan font-weight="700">Implementation:</tspan> Python reference and C++ kernels (pybind11, Eigen fixed-size 4×4, GIL released) with identical outputs.</tspan>
+    <tspan x="52" y="835">Every result file records its seed, backend and commit. Runtimes: one CPU core, median of five runs. Matching and bundle adjustment dominate the cost.</tspan>
+  </text>
+</svg>

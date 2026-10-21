@@ -1,0 +1,31 @@
+{
+  "media": "video",
+  "passed": false,
+  "metadata_audit": {
+    "metadata_auc": 0.9966016319378088,
+    "n": 2869,
+    "n_groups": 2869
+  },
+  "min_auc": 0.7,
+  "qualifying_generators": [
+    "gen2",
+    "moonvalley",
+    "sora"
+  ],
+  "provenance": {
+    "git_commit": "b092d5a",
+    "config_hash": "09e31f4ff8d4c02d",
+    "seed": 88100002,
+    "versions": {
+      "python": "3.12.10",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "cv2": "5.0.0",
+      "sklearn": "1.9.1",
+      "pandas": "3.0.6"
+    },
+    "inputs": {
+      "data\\manifests\\videos_v2.csv": "78639cd54e42653695af7d3e13bc3e28cf4e44206667a1108f092669ec8ce988"
+    }
+  }
+}

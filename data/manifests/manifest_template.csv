@@ -1,0 +1,5 @@
+path,label,source,generator,split,sha256
+data/images/real/scene_0001/img_0001.jpg,real,real/scene_0001,none,train_null,<sha256 of file>
+data/images/real/scene_0002/img_0001.jpg,real,real/scene_0002,none,val,<sha256 of file>
+data/images/generated/sdxl/prompt_0001/img_0001.png,generated,sdxl/prompt_0001,sdxl,cal,<sha256 of file>
+data/images/generated/midjourney_v5/prompt_0002/img_0001.png,generated,midjourney_v5/prompt_0002,midjourney_v5,test,<sha256 of file>

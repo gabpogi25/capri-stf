@@ -1,0 +1,34 @@
+# Experiment: consistency_test analysis: sizes
+# Seed: 81900000
+# Backend: cpp
+# Code commit: c207214
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+Role,Statistic,N,Coverage,Size
+test,pencil_q10,400,1.0,0.055
+test,std_native_q10,400,1.0,0.035
+test,std_tyler_q10,400,1.0,0.06
+test,acat,400,1.0,0.035
+test,sampson_mean,400,1.0,0.015
+test,split_glrt,400,1.0,0.0725
+test,frame_q50,400,1.0,0.0375
+sig025,pencil_q10,200,1.0,0.065
+sig025,std_native_q10,200,1.0,0.125
+sig025,std_tyler_q10,200,1.0,0.1
+sig025,acat,200,1.0,
+sig025,sampson_mean,200,1.0,0.035
+sig025,split_glrt,200,1.0,0.065
+sig025,frame_q50,200,1.0,0.04
+sig1,pencil_q10,200,1.0,0.045
+sig1,std_native_q10,200,1.0,0.005
+sig1,std_tyler_q10,200,1.0,0.02
+sig1,acat,200,1.0,
+sig1,sampson_mean,200,1.0,0.195
+sig1,split_glrt,200,1.0,0.08
+sig1,frame_q50,200,1.0,0.03
+shift,pencil_q10,200,1.0,0.98
+shift,std_native_q10,200,1.0,0.0
+shift,std_tyler_q10,200,1.0,0.975
+shift,acat,200,1.0,0.045
+shift,sampson_mean,200,1.0,0.025
+shift,split_glrt,200,1.0,0.98
+shift,frame_q50,200,1.0,0.095

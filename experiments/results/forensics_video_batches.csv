@@ -1,0 +1,32 @@
+# Experiment: Forensic video batch draw from videos_v2.csv
+# Seed: 88600000
+# Backend: cpp
+# Code commit: 0bd7b30
+# Python 3.12.10, numpy 2.5.4, pandas 3.0.6
+Batch,split,label,generator,N_Items
+1,cal,generated,crafter,59
+1,cal,generated,hotshot,31
+1,cal,generated,lavie,76
+1,cal,generated,modelscope,30
+1,cal,generated,morphstudio,33
+1,cal,generated,show_1,41
+1,cal,generated,wildscrape,30
+1,test,generated,gen2,150
+1,test,generated,moonvalley,150
+1,test,generated,sora,56
+1,test,real,none,300
+1,train_null,real,none,300
+1,val,real,none,300
+2,cal,generated,crafter,1339
+2,cal,generated,hotshot,669
+2,cal,generated,lavie,1324
+2,cal,generated,modelscope,670
+2,cal,generated,morphstudio,667
+2,cal,generated,show_1,659
+2,cal,generated,wildscrape,612
+2,cal,real,none,802
+2,test,generated,gen2,1230
+2,test,generated,moonvalley,476
+2,test,real,none,507
+2,train_null,real,none,1282
+2,val,real,none,509

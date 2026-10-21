@@ -1,0 +1,310 @@
+# Experiment: logistic fusion experiment: logistic Confidence Fusion, model
+# Seed: 42019
+# Backend: cpp
+# Code commit: 4d4135d
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+arm,rule,parameter,index,value,detail
+F1,kappa_gate,generic_train_median_kappa_J,0,57.074798698541784,
+primary,M1,threshold,0,0.36370739470906954,
+primary,M1,platt_slope,0,1.0639888128809576,
+primary,M1,platt_intercept,0,-1.675321984379212,
+primary,M1,input_mean,0,1.7787502206257728,log_kappa_J
+primary,M1,input_mean,1,4.959986208517766,log_L
+primary,M1,input_mean,2,-0.6964477707775089,log_sv_ratio
+primary,M1,input_mean,3,-2.381631360013013,log_pencil_q10
+primary,M1,input_mean,4,-3.303299071170678,log_rho_indep
+primary,M1,input_scale,0,0.45593606386863944,log_kappa_J
+primary,M1,input_scale,1,1.0524574191245584,log_L
+primary,M1,input_scale,2,0.20466496772013573,log_sv_ratio
+primary,M1,input_scale,3,0.6561141544560444,log_pencil_q10
+primary,M1,input_scale,4,0.7646861637109864,log_rho_indep
+primary,M1,term_mean,0,1.0,0 0 0 0 0
+primary,M1,term_mean,1,1.2086289641068843e-14,1 0 0 0 0
+primary,M1,term_mean,2,1.67430090955566e-15,0 1 0 0 0
+primary,M1,term_mean,3,-5.3197605051228235e-15,0 0 1 0 0
+primary,M1,term_mean,4,-8.694309822352526e-15,0 0 0 1 0
+primary,M1,term_mean,5,-2.37238271355842e-15,0 0 0 0 1
+primary,M1,term_mean,6,1.0000000000000036,2 0 0 0 0
+primary,M1,term_mean,7,0.7162013495569075,1 1 0 0 0
+primary,M1,term_mean,8,-0.29321808103364166,1 0 1 0 0
+primary,M1,term_mean,9,0.10619005572800046,1 0 0 1 0
+primary,M1,term_mean,10,-0.12149221277626031,1 0 0 0 1
+primary,M1,term_mean,11,1.000000000000001,0 2 0 0 0
+primary,M1,term_mean,12,-0.4212712016570654,0 1 1 0 0
+primary,M1,term_mean,13,0.12867862395378016,0 1 0 1 0
+primary,M1,term_mean,14,-0.20619779783765427,0 1 0 0 1
+primary,M1,term_mean,15,1.0000000000000053,0 0 2 0 0
+primary,M1,term_mean,16,-0.17168682098214352,0 0 1 1 0
+primary,M1,term_mean,17,0.4103784784854818,0 0 1 0 1
+primary,M1,term_mean,18,1.0000000000000044,0 0 0 2 0
+primary,M1,term_mean,19,0.5937431261594982,0 0 0 1 1
+primary,M1,term_mean,20,1.0000000000000013,0 0 0 0 2
+primary,M1,term_scale,0,1.0,0 0 0 0 0
+primary,M1,term_scale,1,1.0000000000000009,1 0 0 0 0
+primary,M1,term_scale,2,1.0000000000000002,0 1 0 0 0
+primary,M1,term_scale,3,1.0000000000000024,0 0 1 0 0
+primary,M1,term_scale,4,1.0000000000000027,0 0 0 1 0
+primary,M1,term_scale,5,1.0000000000000009,0 0 0 0 1
+primary,M1,term_scale,6,1.3111695356167945,2 0 0 0 0
+primary,M1,term_scale,7,1.184574309918021,1 1 0 0 0
+primary,M1,term_scale,8,1.0827249000408539,1 0 1 0 0
+primary,M1,term_scale,9,1.0087923033781647,1 0 0 1 0
+primary,M1,term_scale,10,1.041813214072497,1 0 0 0 1
+primary,M1,term_scale,11,1.6287962634478859,0 2 0 0 0
+primary,M1,term_scale,12,1.1794822055053038,0 1 1 0 0
+primary,M1,term_scale,13,1.0269111834726505,0 1 0 1 0
+primary,M1,term_scale,14,1.0435074333362435,0 1 0 0 1
+primary,M1,term_scale,15,1.8897718895728417,0 0 2 0 0
+primary,M1,term_scale,16,1.032964110098172,0 0 1 1 0
+primary,M1,term_scale,17,1.1718405943234445,0 0 1 0 1
+primary,M1,term_scale,18,1.8224915623794815,0 0 0 2 0
+primary,M1,term_scale,19,1.7513571804548262,0 0 0 1 1
+primary,M1,term_scale,20,2.003396085895655,0 0 0 0 2
+primary,M1,term_coefficient,0,0.0,0 0 0 0 0
+primary,M1,term_coefficient,1,0.12045095695689259,1 0 0 0 0
+primary,M1,term_coefficient,2,-0.00011018344995218372,0 1 0 0 0
+primary,M1,term_coefficient,3,-0.8393365238555609,0 0 1 0 0
+primary,M1,term_coefficient,4,2.3668655832044587,0 0 0 1 0
+primary,M1,term_coefficient,5,2.931606083056902,0 0 0 0 1
+primary,M1,term_coefficient,6,-0.05292704556789604,2 0 0 0 0
+primary,M1,term_coefficient,7,0.7351902288434964,1 1 0 0 0
+primary,M1,term_coefficient,8,0.3087450713422867,1 0 1 0 0
+primary,M1,term_coefficient,9,-0.767894453563302,1 0 0 1 0
+primary,M1,term_coefficient,10,-0.6777170246837521,1 0 0 0 1
+primary,M1,term_coefficient,11,-0.022638692233530378,0 2 0 0 0
+primary,M1,term_coefficient,12,-0.15686803518350032,0 1 1 0 0
+primary,M1,term_coefficient,13,0.10085189505833388,0 1 0 1 0
+primary,M1,term_coefficient,14,0.36624683934126034,0 1 0 0 1
+primary,M1,term_coefficient,15,-0.04564671169352066,0 0 2 0 0
+primary,M1,term_coefficient,16,0.4306458151143853,0 0 1 1 0
+primary,M1,term_coefficient,17,-0.6009154522149175,0 0 1 0 1
+primary,M1,term_coefficient,18,1.078886736952646,0 0 0 2 0
+primary,M1,term_coefficient,19,-0.469795749197379,0 0 0 1 1
+primary,M1,term_coefficient,20,2.3063454605700398,0 0 0 0 2
+primary,M1,intercept,0,-0.9104543453831861,
+primary,M1-lin,threshold,0,0.3242610662124464,
+primary,M1-lin,platt_slope,0,1.210681058953871,
+primary,M1-lin,platt_intercept,0,-1.6502841135304642,
+primary,M2,threshold,0,0.38820378389980004,
+primary,M2,platt_slope,0,0.7236809219129666,
+primary,M2,platt_intercept,0,-0.8958927371098786,
+primary,C2,threshold,0,0.22890377988239793,
+primary,C2,platt_slope,0,0.309245296185596,
+primary,C2,platt_intercept,0,-1.4553828077973403,
+primary,C2-lin,threshold,0,0.2220728345981708,
+primary,C2-lin,platt_slope,0,0.6320829283309619,
+primary,C2-lin,platt_intercept,0,-1.457254633970555,
+primary,C2-norho,threshold,0,0.27238779292613957,
+primary,C2-norho,platt_slope,0,0.44187590638425533,
+primary,C2-norho,platt_intercept,0,-1.456203014219093,
+primary,M1-no-pencil,threshold,0,0.4315513901632234,
+primary,M1-no-pencil,platt_slope,0,1.0654137819223426,
+primary,M1-no-pencil,platt_intercept,0,-1.5931985296574658,
+primary,M1-no-rho,threshold,0,0.39520738437662206,
+primary,M1-no-rho,platt_slope,0,1.1181334044837576,
+primary,M1-no-rho,platt_intercept,0,-1.5827183017278794,
+primary,M1-conditioning-only,threshold,0,0.2420689689853971,
+primary,M1-conditioning-only,platt_slope,0,0.47030422940785493,
+primary,M1-conditioning-only,platt_intercept,0,-1.4529983315417923,
+primary,C1:log_kappa_J,sign,0,1.0,
+primary,C1:log_kappa_J,threshold,0,2.8971866759306866,
+primary,C1:log_kappa_J,train_cal_mcc,0,0.35551248304001615,
+primary,C1:log_L,sign,0,1.0,
+primary,C1:log_L,threshold,0,8.249666084485062,
+primary,C1:log_L,train_cal_mcc,0,0.34351057488027154,
+primary,C1:log_sv_ratio,sign,0,-1.0,
+primary,C1:log_sv_ratio,threshold,0,1.4060828403552514,
+primary,C1:log_sv_ratio,train_cal_mcc,0,0.34273211594383746,
+primary,C1:log_pencil_q10,sign,0,1.0,
+primary,C1:log_pencil_q10,threshold,0,-1.8563751539611049,
+primary,C1:log_pencil_q10,train_cal_mcc,0,0.7233872226520565,
+primary,C1:log_rho_indep,sign,0,1.0,
+primary,C1:log_rho_indep,threshold,0,-2.719701326308622,
+primary,C1:log_rho_indep,train_cal_mcc,0,0.7181603908216532,
+primary,C1*,chosen_input,0,0.7233872226520565,log_pencil_q10
+primary,C3,threshold,0,2.96256153579498,log_kappa_J
+primary,C3,threshold,1,-1.7500239022411708,log_pencil_q10
+primary,C3,threshold,2,-2.6118960828083577,log_rho_indep
+primary,C3,train_cal_mcc,0,0.7605190241401003,
+F1,M1,threshold,0,0.16224242281773654,
+F1,M1,platt_slope,0,1.1360398907327058,
+F1,M1,platt_intercept,0,-1.5183442033870844,
+F1,M1,input_mean,0,1.425499146114996,log_kappa_J
+F1,M1,input_mean,1,4.375121821241139,log_L
+F1,M1,input_mean,2,-0.6489428883317976,log_sv_ratio
+F1,M1,input_mean,3,-2.4384094364360567,log_pencil_q10
+F1,M1,input_mean,4,-3.2288502659283864,log_rho_indep
+F1,M1,input_scale,0,0.22166008889253483,log_kappa_J
+F1,M1,input_scale,1,0.856845335475744,log_L
+F1,M1,input_scale,2,0.1710318815222931,log_sv_ratio
+F1,M1,input_scale,3,0.6489877245584607,log_pencil_q10
+F1,M1,input_scale,4,0.7192721496476159,log_rho_indep
+F1,M1,term_mean,0,1.0,0 0 0 0 0
+F1,M1,term_mean,1,-2.0145685606327794e-15,1 0 0 0 0
+F1,M1,term_mean,2,-1.5554062498644483e-15,0 1 0 0 0
+F1,M1,term_mean,3,2.1876863662061728e-15,0 0 1 0 0
+F1,M1,term_mean,4,-4.4595156845478284e-15,0 0 0 1 0
+F1,M1,term_mean,5,8.664601882695017e-16,0 0 0 0 1
+F1,M1,term_mean,6,0.999999999999999,2 0 0 0 0
+F1,M1,term_mean,7,0.2768925675699616,1 1 0 0 0
+F1,M1,term_mean,8,-0.2443037275179669,1 0 1 0 0
+F1,M1,term_mean,9,0.0740304121644959,1 0 0 1 0
+F1,M1,term_mean,10,-0.10873086428172166,1 0 0 0 1
+F1,M1,term_mean,11,1.0,0 2 0 0 0
+F1,M1,term_mean,12,-0.4042331553093971,0 1 1 0 0
+F1,M1,term_mean,13,0.0904543846875641,0 1 0 1 0
+F1,M1,term_mean,14,-0.18108280912635477,0 1 0 0 1
+F1,M1,term_mean,15,0.9999999999999976,0 0 2 0 0
+F1,M1,term_mean,16,-0.1486650026223752,0 0 1 1 0
+F1,M1,term_mean,17,0.3520204665947687,0 0 1 0 1
+F1,M1,term_mean,18,0.9999999999999992,0 0 0 2 0
+F1,M1,term_mean,19,0.6600078019489759,0 0 0 1 1
+F1,M1,term_mean,20,0.9999999999999999,0 0 0 0 2
+F1,M1,term_scale,0,1.0,0 0 0 0 0
+F1,M1,term_scale,1,0.9999999999999988,1 0 0 0 0
+F1,M1,term_scale,2,0.9999999999999996,0 1 0 0 0
+F1,M1,term_scale,3,0.9999999999999988,0 0 1 0 0
+F1,M1,term_scale,4,0.9999999999999997,0 0 0 1 0
+F1,M1,term_scale,5,0.9999999999999999,0 0 0 0 1
+F1,M1,term_scale,6,1.3782820725112426,2 0 0 0 0
+F1,M1,term_scale,7,1.0507685723894382,1 1 0 0 0
+F1,M1,term_scale,8,0.9830980327742327,1 0 1 0 0
+F1,M1,term_scale,9,1.0104882172832745,1 0 0 1 0
+F1,M1,term_scale,10,1.0015396378099397,1 0 0 0 1
+F1,M1,term_scale,11,2.231292546141548,0 2 0 0 0
+F1,M1,term_scale,12,1.0870778227064226,0 1 1 0 0
+F1,M1,term_scale,13,0.9651996057311533,0 1 0 1 0
+F1,M1,term_scale,14,0.9752201514589585,0 1 0 0 1
+F1,M1,term_scale,15,1.478710563459265,0 0 2 0 0
+F1,M1,term_scale,16,0.9629695988326002,0 0 1 1 0
+F1,M1,term_scale,17,1.0604546457823751,0 0 1 0 1
+F1,M1,term_scale,18,1.9267252794819214,0 0 0 2 0
+F1,M1,term_scale,19,1.8769344483530412,0 0 0 1 1
+F1,M1,term_scale,20,2.0832206151803336,0 0 0 0 2
+F1,M1,term_coefficient,0,0.0,0 0 0 0 0
+F1,M1,term_coefficient,1,-0.1329464062477891,1 0 0 0 0
+F1,M1,term_coefficient,2,-0.4397839874895403,0 1 0 0 0
+F1,M1,term_coefficient,3,-1.0042318730755466,0 0 1 0 0
+F1,M1,term_coefficient,4,2.82784396169631,0 0 0 1 0
+F1,M1,term_coefficient,5,2.9130174212140814,0 0 0 0 1
+F1,M1,term_coefficient,6,-0.08235560136794247,2 0 0 0 0
+F1,M1,term_coefficient,7,0.018945511270145127,1 1 0 0 0
+F1,M1,term_coefficient,8,0.06791858911099014,1 0 1 0 0
+F1,M1,term_coefficient,9,0.3210723603580581,1 0 0 1 0
+F1,M1,term_coefficient,10,0.11571198660847169,1 0 0 0 1
+F1,M1,term_coefficient,11,0.043255679446916336,0 2 0 0 0
+F1,M1,term_coefficient,12,-0.23971047672791962,0 1 1 0 0
+F1,M1,term_coefficient,13,0.3162229297775709,0 1 0 1 0
+F1,M1,term_coefficient,14,0.36263248643577184,0 1 0 0 1
+F1,M1,term_coefficient,15,-0.09039135772993698,0 0 2 0 0
+F1,M1,term_coefficient,16,0.8226001231287658,0 0 1 1 0
+F1,M1,term_coefficient,17,-0.35780359135717427,0 0 1 0 1
+F1,M1,term_coefficient,18,0.9415801719624374,0 0 0 2 0
+F1,M1,term_coefficient,19,-1.602379567751151,0 0 0 1 1
+F1,M1,term_coefficient,20,2.458204278765173,0 0 0 0 2
+F1,M1,intercept,0,-1.5551866024484895,
+F1,M1-lin,threshold,0,0.19181159446717813,
+F1,M1-lin,platt_slope,0,1.190790445267215,
+F1,M1-lin,platt_intercept,0,-1.5855215003235856,
+F1,M2,threshold,0,0.1432438001784174,
+F1,M2,platt_slope,0,0.5635343516198962,
+F1,M2,platt_intercept,0,-0.4014317574905642,
+F1,C2,threshold,0,0.1942742349634144,
+F1,C2,platt_slope,0,0.03575730931856265,
+F1,C2,platt_intercept,0,-1.461352889328704,
+F1,C1:log_kappa_J,sign,0,1.0,
+F1,C1:log_kappa_J,threshold,0,1.7528482114803148,
+F1,C1:log_kappa_J,train_cal_mcc,0,0.13143229112573795,
+F1,C1:log_L,sign,0,1.0,
+F1,C1:log_L,threshold,0,7.451242053427274,
+F1,C1:log_L,train_cal_mcc,0,0.13217049771890818,
+F1,C1:log_sv_ratio,sign,0,1.0,
+F1,C1:log_sv_ratio,threshold,0,-0.31685509189960237,
+F1,C1:log_sv_ratio,train_cal_mcc,0,0.13037975078526204,
+F1,C1:log_pencil_q10,sign,0,1.0,
+F1,C1:log_pencil_q10,threshold,0,-2.135084924291426,
+F1,C1:log_pencil_q10,train_cal_mcc,0,0.37276679675545704,
+F1,C1:log_rho_indep,sign,0,1.0,
+F1,C1:log_rho_indep,threshold,0,-2.779967348097078,
+F1,C1:log_rho_indep,train_cal_mcc,0,0.36207998178736356,
+F1,C1*,chosen_input,0,0.37276679675545704,log_pencil_q10
+F1,C3,threshold,0,1.7528482114803148,log_kappa_J
+F1,C3,threshold,1,-1.9893185297049252,log_pencil_q10
+F1,C3,threshold,2,-2.7117019875812627,log_rho_indep
+F1,C3,train_cal_mcc,0,0.3860143387885677,
+D,M1-D,threshold,0,0.3407989981388762,
+D,M1-D,platt_slope,0,1.1253531687091094,
+D,M1-D,platt_intercept,0,-1.2998040497796213,
+D,M1-D,input_mean,0,1.5884259608633355,log_kappa_J_w
+D,M1-D,input_mean,1,4.131460161881147,log_L_w
+D,M1-D,input_mean,2,-0.36065381580383615,log_sv_ratio_w
+D,M1-D,input_mean,3,-2.3729768406195837,log_pencil_q10_d
+D,M1-D,input_scale,0,0.4831718816930734,log_kappa_J_w
+D,M1-D,input_scale,1,1.0213560584949777,log_L_w
+D,M1-D,input_scale,2,0.15452789906409012,log_sv_ratio_w
+D,M1-D,input_scale,3,0.6561192164240199,log_pencil_q10_d
+D,M1-D,term_mean,0,1.0,0 0 0 0
+D,M1-D,term_mean,1,2.139186482363943e-15,1 0 0 0
+D,M1-D,term_mean,2,7.486828298785233e-15,0 1 0 0
+D,M1-D,term_mean,3,2.9274934882710894e-15,0 0 1 0
+D,M1-D,term_mean,4,-1.1325768183255806e-14,0 0 0 1
+D,M1-D,term_mean,5,0.9999999999999973,2 0 0 0
+D,M1-D,term_mean,6,0.7701100086409493,1 1 0 0
+D,M1-D,term_mean,7,-0.21758628630084556,1 0 1 0
+D,M1-D,term_mean,8,0.06040782398291069,1 0 0 1
+D,M1-D,term_mean,9,1.0000000000000016,0 2 0 0
+D,M1-D,term_mean,10,-0.2896927920606179,0 1 1 0
+D,M1-D,term_mean,11,0.0720357488643916,0 1 0 1
+D,M1-D,term_mean,12,1.0000000000000062,0 0 2 0
+D,M1-D,term_mean,13,-0.1810507349808583,0 0 1 1
+D,M1-D,term_mean,14,0.9999999999999987,0 0 0 2
+D,M1-D,term_scale,0,1.0,0 0 0 0
+D,M1-D,term_scale,1,0.999999999999999,1 0 0 0
+D,M1-D,term_scale,2,1.0000000000000004,0 1 0 0
+D,M1-D,term_scale,3,1.0000000000000024,0 0 1 0
+D,M1-D,term_scale,4,0.9999999999999993,0 0 0 1
+D,M1-D,term_scale,5,1.4066693880275136,2 0 0 0
+D,M1-D,term_scale,6,1.3095754054464728,1 1 0 0
+D,M1-D,term_scale,7,1.0257720665454895,1 0 1 0
+D,M1-D,term_scale,8,0.9919086548074766,1 0 0 1
+D,M1-D,term_scale,9,1.6281543717515394,0 2 0 0
+D,M1-D,term_scale,10,1.09241772320405,0 1 1 0
+D,M1-D,term_scale,11,1.0203373761948584,0 1 0 1
+D,M1-D,term_scale,12,2.32271328872019,0 0 2 0
+D,M1-D,term_scale,13,1.005848340740196,0 0 1 1
+D,M1-D,term_scale,14,1.8048178047825267,0 0 0 2
+D,M1-D,term_coefficient,0,0.0,0 0 0 0
+D,M1-D,term_coefficient,1,0.6212711372662527,1 0 0 0
+D,M1-D,term_coefficient,2,-0.09485488710727841,0 1 0 0
+D,M1-D,term_coefficient,3,0.027735327909507442,0 0 1 0
+D,M1-D,term_coefficient,4,2.6497309412038295,0 0 0 1
+D,M1-D,term_coefficient,5,0.22405400397457187,2 0 0 0
+D,M1-D,term_coefficient,6,0.0638884530589111,1 1 0 0
+D,M1-D,term_coefficient,7,0.20446521958331051,1 0 1 0
+D,M1-D,term_coefficient,8,-0.7122092522173759,1 0 0 1
+D,M1-D,term_coefficient,9,0.15110692064899317,0 2 0 0
+D,M1-D,term_coefficient,10,-0.10718767970002374,0 1 1 0
+D,M1-D,term_coefficient,11,0.012163283527520649,0 1 0 1
+D,M1-D,term_coefficient,12,-0.02588646682835146,0 0 2 0
+D,M1-D,term_coefficient,13,0.16942619850205815,0 0 1 1
+D,M1-D,term_coefficient,14,0.9644182396514465,0 0 0 2
+D,M1-D,intercept,0,-0.9662023391213734,
+D,M1-lin-D,threshold,0,0.4518579424540521,
+D,M1-lin-D,platt_slope,0,1.138940338580196,
+D,M1-lin-D,platt_intercept,0,-1.3387516577824534,
+D,C1-D:log_kappa_J_w,sign,0,1.0,
+D,C1-D:log_kappa_J_w,threshold,0,2.4799508379446475,
+D,C1-D:log_kappa_J_w,train_cal_mcc,0,0.30170076038750937,
+D,C1-D:log_L_w,sign,0,1.0,
+D,C1-D:log_L_w,threshold,0,5.5538935840668335,
+D,C1-D:log_L_w,train_cal_mcc,0,0.28471623339365415,
+D,C1-D:log_sv_ratio_w,sign,0,-1.0,
+D,C1-D:log_sv_ratio_w,threshold,0,0.9882447549520529,
+D,C1-D:log_sv_ratio_w,train_cal_mcc,0,0.24869719712494226,
+D,C1-D:log_pencil_q10_d,sign,0,1.0,
+D,C1-D:log_pencil_q10_d,threshold,0,-1.9366457351569293,
+D,C1-D:log_pencil_q10_d,train_cal_mcc,0,0.6708173617723739,
+D,C1*-D,chosen_input,0,0.6708173617723739,log_pencil_q10_d
+D,C3-D,threshold,0,2.685611117669988,log_kappa_J_w
+D,C3-D,threshold,1,-1.813275656495076,log_pencil_q10_d
+D,C3-D,train_cal_mcc,0,0.6800186712969246,

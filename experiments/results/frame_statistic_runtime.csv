@@ -1,0 +1,18 @@
+# Experiment: EXPLORATORY runtime: frame statistic vs pencil family
+# Seed: 90200002
+# Backend: cpp
+# Code commit: 1c81de0
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+N_Points,Method,Values,Median_ms
+12,pencil_full_or_50k,41580,1.0601170001791616
+12,frame_given,21,0.11087099983342341
+12,frame_with_choice,21,7.734404999609978
+30,pencil_full_or_50k,50000,5.455450999761524
+30,frame_given,75,0.2673230001164484
+30,frame_with_choice,75,40.67319000023417
+100,pencil_full_or_50k,50000,5.474907000007079
+100,frame_given,285,0.8731839998290525
+100,frame_with_choice,285,57.58577699998568
+300,pencil_full_or_50k,50000,7.2075570001288725
+300,frame_given,885,2.604403000077582
+300,frame_with_choice,885,69.89280600009806

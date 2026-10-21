@@ -1,0 +1,5 @@
+CR_12(3,4;5,6) = z/w: true
+CR_13(2,4;5,6) = y/w: true
+CR_23(1,4;5,6) = x/w: true
+control, CR_12(3,5;4,6) = z/w: false (must be false)
+ALL M2 FRAME CHECKS PASSED

@@ -1,0 +1,27 @@
+{
+  "media": "video",
+  "passed": false,
+  "metadata_audit": {
+    "metadata_auc": 0.5662499999999999,
+    "n": 200,
+    "n_groups": 20
+  },
+  "min_auc": 0.7,
+  "qualifying_generators": [],
+  "provenance": {
+    "git_commit": "f69665b",
+    "config_hash": "09e31f4ff8d4c02d",
+    "seed": 88200002,
+    "versions": {
+      "python": "3.12.10",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "cv2": "5.0.0",
+      "sklearn": "1.9.1",
+      "pandas": "3.0.6"
+    },
+    "inputs": {
+      "data\\manifests\\ffpp_c23.csv": "0bf950f10054f6f5b9e76511acb793bf0b141a0fa1bf827c56c81090630fd875"
+    }
+  }
+}

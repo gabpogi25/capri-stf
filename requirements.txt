@@ -1,0 +1,24 @@
+# Core: synthetic experiments, forensics module, tests (tested with Python 3.13,
+# numpy 2.5, scipy 1.18, scikit-learn 1.9, pandas 3.0, OpenCV 5.0).
+numpy>=2.0
+scipy>=1.13
+scikit-learn>=1.5
+pandas>=2.2
+opencv-python>=4.10        # LSD line detector, KLT, USAC-MAGSAC
+pyyaml>=6.0
+pybind11>=2.12             # builds the C++ backend in cpp_core/
+h5py>=3.10
+tqdm>=4.66
+pytest>=8.0
+sympy>=1.12                # experiments/symbolic/verify_plucker.py
+matplotlib>=3.8            # optional match/grid visualizations
+
+# Optional, by feature (install as needed):
+#   torch>=2.2, torchvision     ml_models/ training and fusion-model inference
+#   statsmodels                 experiments/power_analysis.py
+#   pycolmap, hloc, trimesh     colmap_capri_automator.py, run_real_world_baselines.py
+#   streamlit, plotly           dashboard.py
+#   open3d                      reconstruction/visualize.py
+#   open_clip_torch             forensics/learned/probe.py (optional learned branch)
+#   kagglehub                   scripts/download_imc_dataset.py
+# R 4.3 with ggplot2, dplyr, tidyr, patchwork, readr, scales: figures/make_figures.R

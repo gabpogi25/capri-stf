@@ -1,0 +1,36 @@
+# Experiment: Scene selection (<= 75 images) and batch draw for real_reconstruction
+# Seed: 86600000
+# Backend: cpp
+# Code commit: 7d87d82
+# Python 3.12.10, numpy 2.5.4, pandas 3.0.6
+Dataset,Scene,N_Images,Included,Batch,Est_Hours_Planning
+ETs,another_ET,10,True,1,0.02
+imc2023_haiper,bike,15,True,1,0.04
+imc2023_heritage,dioscuri,75,True,1,1.33
+imc2023_heritage,wall,43,True,1,0.39
+imc2023_theather_imc2024_church,church,50,True,1,0.55
+imc2023_theather_imc2024_church,kyiv-puppet-theater,26,True,1,0.13
+imc2024_dioscuri_baalshamin,baalshamin,49,True,1,0.52
+imc2024_dioscuri_baalshamin,dioscuri,65,True,1,0.97
+pt_piazzasanmarco_grandplace,piazza_san_marco,68,True,1,1.07
+stairs,stairs_split_2,23,True,1,0.1
+ETs,ET,9,True,2,0.01
+fbk_vineyard,vineyard_split_1,43,True,2,0.39
+fbk_vineyard,vineyard_split_2,35,True,2,0.25
+imc2023_haiper,chairs,16,True,2,0.05
+imc2023_haiper,fountain,23,True,2,0.1
+imc2023_heritage,cyprus,30,True,2,0.18
+pt_brandenburg_british_buckingham,brandenburg_gate,75,True,2,1.33
+pt_brandenburg_british_buckingham,british_museum,75,True,2,1.33
+pt_brandenburg_british_buckingham,buckingham_palace,75,True,2,1.33
+pt_sacrecoeur_trevi_tajmahal,sacre_coeur,75,True,2,1.33
+pt_sacrecoeur_trevi_tajmahal,taj_mahal,75,True,2,1.33
+pt_sacrecoeur_trevi_tajmahal,trevi_fountain,75,True,2,1.33
+stairs,stairs_split_1,28,True,2,0.15
+amy_gardens,peach,200,False,3,11.86
+fbk_vineyard,vineyard_split_3,85,False,3,1.76
+imc2024_lizard_pond,lizard,90,False,3,2.0
+imc2024_lizard_pond,pond,90,False,3,2.0
+pt_piazzasanmarco_grandplace,grand_place_brussels,100,False,3,2.52
+pt_stpeters_stpauls,st_pauls_cathedral,100,False,3,2.52
+pt_stpeters_stpauls,st_peters_square,100,False,3,2.52

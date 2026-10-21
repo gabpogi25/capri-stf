@@ -1,0 +1,9 @@
+# Experiment: calibrated-trust experiment: calibrated trust (calibrated-trust pre-registration)
+# Seed: 42020
+# Backend: cpp
+# Code commit: 4d4135d
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+split,n_scenes,excluded_F_failed,excluded_fewer_than_8_inliers,scenes_with_items,ransac_surviving_points,surviving_mismatches,points_outside_D,items_excluded_true_undefined,items,accepted_tuples,tuples_sign_flip,tuples_reconstructed_undefined,tuples_true_undefined,ransac_rejected_points,share_outside_D,share_single_tuple_items,fisher_p_scene_exclusion_vs_calibration,scene_exclusion_rate_differs_flag,fisher_p_item_exclusion_vs_calibration,item_exclusion_rate_differs_flag
+calibration,600,0,0,600,29491,2912,0,0,29491,5643,717,0,0,6509,0.0,0.8608389000033909,1.0,False,1.0,False
+test,1000,0,0,1000,49259,4839,0,0,49259,9460,1252,0,0,10741,0.0,0.8559248056192778,1.0,False,1.0,False
+shifted,300,0,0,300,11486,3103,0,0,11486,2212,662,0,0,6514,0.0,0.8500783562597946,1.0,False,1.0,False

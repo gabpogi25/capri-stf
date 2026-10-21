@@ -1,0 +1,101 @@
+# Experiment: injection grid/detector benchmark: pre-registered decisions (kill switch, injection harness, classical-test benchmark)
+# Seed: 32000000
+# Backend: cpp
+# Code commit: 4d4135d
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+Item,Value,Rule
+size_rigid_test sigma=0.25 (pencil_q10),0.035,"[0.035, 0.065]"
+size_rigid_test sigma=0.5 (pencil_q10),0.045,"[0.035, 0.065]"
+size_rigid_test sigma=1.0 (pencil_q10),0.07,"[0.035, 0.065]"
+JT p jitter (pencil_q10),6.947367918684828e-224,< 1e-3 on >= 2 of jitter/drift/warp
+power 8px sigma=0.5 jitter (pencil_q10),0.99,>= 0.8 on >= 1
+JT p drift (pencil_q10),2.2032767363203606e-134,< 1e-3 on >= 2 of jitter/drift/warp
+power 8px sigma=0.5 drift (pencil_q10),0.97,>= 0.8 on >= 1
+JT p warp (pencil_q10),5.274443723218847e-164,< 1e-3 on >= 2 of jitter/drift/warp
+power 8px sigma=0.5 warp (pencil_q10),0.98,>= 0.8 on >= 1
+KILL SWITCH continuation (pencil responds),True,False -> stop
+"full pass jitter: JT, Spearman, power (8px sigma=1)","6.95e-224, 1.000, 1.000 -> True","JT < 1e-3, rho >= 0.9, power >= 0.8"
+"full pass drift: JT, Spearman, power (8px sigma=1)","2.20e-134, 1.000, 0.690 -> False","JT < 1e-3, rho >= 0.9, power >= 0.8"
+"full pass warp: JT, Spearman, power (8px sigma=1)","5.27e-164, 1.000, 0.840 -> True","JT < 1e-3, rho >= 0.9, power >= 0.8"
+"full pass swap: JT, Spearman, power (swap 0.3)","6.58e-143, 1.000, 0.970 -> True","JT < 1e-3, rho >= 0.9, power >= 0.8"
+planar abstention rate,1.0,>= 0.9
+global_projective control max power (pencil_q10),0.1,<= 0.10
+global_projective control max power (pencil_q50),0.1,<= 0.10
+global_projective control max power (pencil_q90),0.07,<= 0.10
+global_projective control max power (asinh_q10),0.12,<= 0.10
+global_projective control max power (acat),0.07,<= 0.10
+global_projective control max power (gauge_q90),0.07,<= 0.10
+global_projective control max power (gauge_med),0.11,<= 0.10
+global_projective control max power (deltaj_med),0.13,<= 0.10
+global_projective control max power (registration_rms),0.08,<= 0.10
+global_projective control max power (split_glrt),0.06,<= 0.10
+global_projective control max power (glrt_all),0.08,<= 0.10
+global_projective control max power (f_ratio),0.08,<= 0.10
+global_projective control max power (sampson_mean),0.13,<= 0.10
+global_projective control max power (magsac_outlier),0.11,<= 0.10
+FULL PASS (pencil),False,all of the above
+statistics with size in band at sigma = 0.5 (eligible for 'best'),"pencil_q10, pencil_q50, asinh_q10, acat, gauge_q90, gauge_med, deltaj_med, registration_rms, split_glrt, f_ratio, sampson_mean, magsac_outlier",R3
+d* jitter,2.0,smallest dose with pencil power >= 0.5 (else largest)
+AUC at d* jitter: pencil_q10,"0.9901 (pencil - this: +0.0000, DeLong p 1.00e+00; size ok True)",descriptive
+AUC at d* jitter: pencil_q50,"0.9913 (pencil - this: -0.0012, DeLong p 2.45e-01; size ok True)",descriptive
+AUC at d* jitter: pencil_q90,"0.9916 (pencil - this: -0.0015, DeLong p 4.80e-01; size ok False)",descriptive
+AUC at d* jitter: asinh_q10,"0.9893 (pencil - this: +0.0008, DeLong p 5.54e-01; size ok True)",descriptive
+AUC at d* jitter: acat,"0.9964 (pencil - this: -0.0063, DeLong p 1.56e-01; size ok True)",descriptive
+AUC at d* jitter: gauge_q90,"0.9896 (pencil - this: +0.0005, DeLong p 8.52e-01; size ok True)",descriptive
+AUC at d* jitter: gauge_med,"0.9877 (pencil - this: +0.0024, DeLong p 2.79e-01; size ok True)",descriptive
+AUC at d* jitter: deltaj_med,"0.9571 (pencil - this: +0.0330, DeLong p 1.81e-05; size ok True)",descriptive
+AUC at d* jitter: registration_rms,"0.9784 (pencil - this: +0.0117, DeLong p 1.30e-02; size ok True)",descriptive
+AUC at d* jitter: split_glrt,"1.0000 (pencil - this: -0.0099, DeLong p 7.52e-03; size ok True)",descriptive
+AUC at d* jitter: glrt_all,"1.0000 (pencil - this: -0.0099, DeLong p 7.52e-03; size ok False)",descriptive
+AUC at d* jitter: f_ratio,"0.4649 (pencil - this: +0.5252, DeLong p 3.13e-46; size ok True)",descriptive
+AUC at d* jitter: sampson_mean,"1.0000 (pencil - this: -0.0099, DeLong p 7.52e-03; size ok True)",descriptive
+AUC at d* jitter: magsac_outlier,"1.0000 (pencil - this: -0.0099, DeLong p 7.67e-03; size ok True)",descriptive
+d* drift,4.0,smallest dose with pencil power >= 0.5 (else largest)
+AUC at d* drift: pencil_q10,"0.9158 (pencil - this: +0.0000, DeLong p 1.00e+00; size ok True)",descriptive
+AUC at d* drift: pencil_q50,"0.9023 (pencil - this: +0.0135, DeLong p 3.73e-04; size ok True)",descriptive
+AUC at d* drift: pencil_q90,"0.8696 (pencil - this: +0.0462, DeLong p 1.28e-06; size ok False)",descriptive
+AUC at d* drift: asinh_q10,"0.9105 (pencil - this: +0.0053, DeLong p 1.73e-01; size ok True)",descriptive
+AUC at d* drift: acat,"0.9779 (pencil - this: -0.0621, DeLong p 1.19e-04; size ok True)",descriptive
+AUC at d* drift: gauge_q90,"0.8690 (pencil - this: +0.0468, DeLong p 9.24e-07; size ok True)",descriptive
+AUC at d* drift: gauge_med,"0.8952 (pencil - this: +0.0206, DeLong p 5.58e-04; size ok True)",descriptive
+AUC at d* drift: deltaj_med,"0.8623 (pencil - this: +0.0535, DeLong p 2.89e-04; size ok True)",descriptive
+AUC at d* drift: registration_rms,"0.8204 (pencil - this: +0.0954, DeLong p 2.92e-13; size ok True)",descriptive
+AUC at d* drift: split_glrt,"1.0000 (pencil - this: -0.0842, DeLong p 1.02e-07; size ok True)",descriptive
+AUC at d* drift: glrt_all,"1.0000 (pencil - this: -0.0842, DeLong p 1.02e-07; size ok False)",descriptive
+AUC at d* drift: f_ratio,"0.0000 (pencil - this: +0.9158, DeLong p 0.00e+00; size ok True)",descriptive
+AUC at d* drift: sampson_mean,"0.9999 (pencil - this: -0.0841, DeLong p 1.06e-07; size ok True)",descriptive
+AUC at d* drift: magsac_outlier,"0.9998 (pencil - this: -0.0839, DeLong p 1.13e-07; size ok True)",descriptive
+d* warp,2.0,smallest dose with pencil power >= 0.5 (else largest)
+AUC at d* warp: pencil_q10,"0.8288 (pencil - this: +0.0000, DeLong p 1.00e+00; size ok True)",descriptive
+AUC at d* warp: pencil_q50,"0.8228 (pencil - this: +0.0060, DeLong p 1.43e-01; size ok True)",descriptive
+AUC at d* warp: pencil_q90,"0.7985 (pencil - this: +0.0303, DeLong p 4.85e-03; size ok False)",descriptive
+AUC at d* warp: asinh_q10,"0.8194 (pencil - this: +0.0094, DeLong p 1.31e-01; size ok True)",descriptive
+AUC at d* warp: acat,"0.7711 (pencil - this: +0.0578, DeLong p 2.19e-02; size ok True)",descriptive
+AUC at d* warp: gauge_q90,"0.7958 (pencil - this: +0.0330, DeLong p 3.43e-04; size ok True)",descriptive
+AUC at d* warp: gauge_med,"0.8127 (pencil - this: +0.0161, DeLong p 1.62e-02; size ok True)",descriptive
+AUC at d* warp: deltaj_med,"0.7916 (pencil - this: +0.0373, DeLong p 5.27e-02; size ok True)",descriptive
+AUC at d* warp: registration_rms,"0.8255 (pencil - this: +0.0033, DeLong p 7.68e-01; size ok True)",descriptive
+AUC at d* warp: split_glrt,"0.8382 (pencil - this: -0.0094, DeLong p 6.06e-01; size ok True)",descriptive
+AUC at d* warp: glrt_all,"0.9880 (pencil - this: -0.1592, DeLong p 7.70e-10; size ok False)",descriptive
+AUC at d* warp: f_ratio,"0.2958 (pencil - this: +0.5331, DeLong p 1.01e-64; size ok True)",descriptive
+AUC at d* warp: sampson_mean,"0.7472 (pencil - this: +0.0816, DeLong p 5.44e-02; size ok True)",descriptive
+AUC at d* warp: magsac_outlier,"0.7213 (pencil - this: +0.1076, DeLong p 1.27e-02; size ok True)",descriptive
+d* swap,0.05,smallest dose with pencil power >= 0.5 (else largest)
+AUC at d* swap: pencil_q10,"0.9299 (pencil - this: +0.0000, DeLong p 1.00e+00; size ok True)",descriptive
+AUC at d* swap: pencil_q50,"0.9431 (pencil - this: -0.0132, DeLong p 1.87e-03; size ok True)",descriptive
+AUC at d* swap: pencil_q90,"0.9552 (pencil - this: -0.0253, DeLong p 3.11e-03; size ok False)",descriptive
+AUC at d* swap: asinh_q10,"0.9275 (pencil - this: +0.0024, DeLong p 3.31e-01; size ok True)",descriptive
+AUC at d* swap: acat,"0.9564 (pencil - this: -0.0265, DeLong p 2.42e-01; size ok True)",descriptive
+AUC at d* swap: gauge_q90,"0.9561 (pencil - this: -0.0262, DeLong p 3.52e-03; size ok True)",descriptive
+AUC at d* swap: gauge_med,"0.9336 (pencil - this: -0.0037, DeLong p 3.94e-01; size ok True)",descriptive
+AUC at d* swap: deltaj_med,"0.8773 (pencil - this: +0.0525, DeLong p 2.80e-03; size ok True)",descriptive
+AUC at d* swap: registration_rms,"0.9293 (pencil - this: +0.0006, DeLong p 9.63e-01; size ok True)",descriptive
+AUC at d* swap: split_glrt,"0.9204 (pencil - this: +0.0095, DeLong p 7.53e-01; size ok True)",descriptive
+AUC at d* swap: glrt_all,"1.0000 (pencil - this: -0.0701, DeLong p 4.63e-06; size ok False)",descriptive
+AUC at d* swap: f_ratio,"0.4328 (pencil - this: +0.4971, DeLong p 7.27e-29; size ok True)",descriptive
+AUC at d* swap: sampson_mean,"0.8980 (pencil - this: +0.0319, DeLong p 2.56e-01; size ok True)",descriptive
+AUC at d* swap: magsac_outlier,"0.6452 (pencil - this: +0.2847, DeLong p 3.72e-18; size ok True)",descriptive
+classical-test benchmark rule 1: pencil below GLRT by > 0.05 everywhere -> GLRT becomes S_alg,False,
+classical-test benchmark rule 2: pencil >= GLRT on >= 1 family at d* -> keep both,False,
+classical-test benchmark rule 3: Sampson within 0.02 of best on every family -> drop 'invariants add value',False,
+PLAN STEP 9 DECISION: Sampson or GLRT matches/beats pencil on every family (methods-paper framing),True,

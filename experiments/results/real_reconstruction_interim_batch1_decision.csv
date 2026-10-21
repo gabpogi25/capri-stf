@@ -1,0 +1,13 @@
+# Experiment: Real reconstruction decision (superglue_ransac_capri vs superglue_ransac), seeds [np.int64(86000000), np.int64(86000001), np.int64(86000002)]
+# Seed: 86500000
+# Backend: cpp
+# Code commit: 0f36e74
+# Python 3.12.10, numpy 2.5.4, pandas 3.0.6
+Metric,Role,N_Units,Mean_D,CI_Low,CI_High,Wilcoxon_p,Units_D_Positive,Units_D_Negative,Decision
+mAA_at_10,primary,10,9.559033453693782e-05,-0.006180436774164328,0.006531877727127433,1.0,4,5,interim after batch 1: no decision (pre-registered analysis on the full set decides)
+N_Registered,descriptive,10,0.26666666666666605,-0.20000000000000143,0.8999999999999997,0.625,2,2,
+Median_Pose_Error_deg,descriptive,8,1.5441179473333415,-0.3822647109015717,4.8766275563121395,0.4609375,5,3,
+Acc_at_5,descriptive,10,-0.0017307291224850818,-0.011088875217060711,0.006438190483081148,0.7421875,3,5,
+Acc_at_10,descriptive,10,0.0007634267728272037,-0.005888821484836882,0.008379193577437936,0.9453125,3,5,
+Acc_at_20,descriptive,10,-7.499168403011063e-05,-0.006897059925706629,0.007051688391146166,0.9453125,4,4,
+ATE_RMSE_Sim3_GT_Units,descriptive,10,0.22381803632902547,-0.06857531852111363,0.699543118712367,0.76953125,5,5,

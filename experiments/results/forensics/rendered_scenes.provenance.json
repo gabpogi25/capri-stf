@@ -1,0 +1,14 @@
+{
+  "git_commit": "b0a9d6a (with uncommitted changes)",
+  "config_hash": "ea25c3f7216e31dd",
+  "seed": 42201,
+  "versions": {
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "cv2": "5.0.0",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.5"
+  },
+  "inputs": {}
+}

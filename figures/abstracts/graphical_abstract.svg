@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CAPRI main graphical abstract. Layout made for Inkscape; edit this template, not graphical_abstract.svg.
+     Images: assets/ (rendered by render_assets.R from experiments/results/abstract_photo_*.csv) and photos/.
+     Placeholders in double braces are filled from the result files by render_assets.R; build.sh exports PDF and PNG. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1640" height="800" viewBox="0 0 1640 800">
+  <defs>
+    <style>
+      text { font-family: Roboto, sans-serif; }
+      .title { font-size: 34px; font-weight: 700; fill: #1f1f1f; }
+      .sub { font-size: 20px; fill: #5f6368; }
+      .head { font-size: 21px; font-weight: 500; fill: #202124; }
+      .num { font-size: 21px; font-weight: 700; fill: #c5532f; }
+      .body { font-size: 15.5px; fill: #3c4043; }
+      .small { font-size: 13.5px; fill: #80868b; }
+      .math { font-family: 'Latin Modern Roman', serif; font-style: italic; fill: #202124; }
+      .up { font-family: 'Latin Modern Roman', serif; font-style: normal; }
+      .panel { fill: #ffffff; stroke: #d5d7da; stroke-width: 2; }
+      .capri { fill: #fdf0ea; stroke: #e9a68c; stroke-width: 2.5; }
+      .frameA { fill: none; stroke: #1f77ff; stroke-width: 5; stroke-linejoin: round; }
+      .frameB { fill: none; stroke: #ff2a1a; stroke-width: 5; stroke-linejoin: round; }
+    </style>
+    <path id="arrow" d="M0,-8 H28 V-19 L50,0 L28,19 V8 H0 Z" fill="#ffffff" stroke="#9aa0a6"
+          stroke-width="3" stroke-linejoin="round"/>
+  </defs>
+  <rect width="1640" height="800" fill="#ffffff"/>
+
+  <text x="30" y="52" class="title">CAPRI<tspan class="sub" dx="16" font-weight="400">Are two projective reconstructions of the same points consistent? Ask only frame-free numbers.</tspan></text>
+
+  <g transform="translate(0,12)">
+    <!-- 1 two view subsets ................................................................. -->
+    <rect x="30" y="80" width="330" height="610" rx="18" class="panel"/>
+    <text x="52" y="118" class="head"><tspan class="num">1</tspan><tspan dx="10">Two view subsets</tspan></text>
+    <g id="stackA">
+      <g transform="translate(60,185) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="photos/sacre_coeur/02928139_3448003521.jpg" width="175" height="125" preserveAspectRatio="xMidYMid slice"/><rect width="175" height="125" class="frameA"/></g>
+      <g transform="translate(88,199) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="photos/sacre_coeur/10265353_3838484249.jpg" width="175" height="125" preserveAspectRatio="xMidYMid slice"/><rect width="175" height="125" class="frameA"/></g>
+      <g transform="translate(116,213) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="photos/sacre_coeur/44120379_8371960244.jpg" width="175" height="125" preserveAspectRatio="xMidYMid slice"/><rect width="175" height="125" class="frameA"/></g>
+      <g transform="translate(144,227) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="photos/sacre_coeur/17295357_9106075285.jpg" width="175" height="125" preserveAspectRatio="xMidYMid slice"/><rect width="175" height="125" class="frameA"/></g>
+      <g transform="translate(172,241) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="photos/sacre_coeur/71295362_4051449754.jpg" width="175" height="125" preserveAspectRatio="xMidYMid slice"/><rect width="175" height="125" class="frameA"/></g>
+    </g>
+    <text x="60" y="400" class="body"><tspan class="math" font-size="20" fill="#1f77ff">V</tspan><tspan class="math" font-size="14" baseline-shift="sub" fill="#1f77ff">A</tspan><tspan dx="8">five photos</tspan></text>
+    <g id="stackB">
+      <g transform="translate(60,447) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="photos/sacre_coeur/03903474_1471484089.jpg" width="175" height="125" preserveAspectRatio="xMidYMid slice"/><rect width="175" height="125" class="frameB"/></g>
+      <g transform="translate(88,461) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="photos/sacre_coeur/32809961_8274055477.jpg" width="175" height="125" preserveAspectRatio="xMidYMid slice"/><rect width="175" height="125" class="frameB"/></g>
+      <g transform="translate(116,475) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="photos/sacre_coeur/51091044_3486849416.jpg" width="175" height="125" preserveAspectRatio="xMidYMid slice"/><rect width="175" height="125" class="frameB"/></g>
+      <g transform="translate(144,489) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="photos/sacre_coeur/60584745_2207571072.jpg" width="175" height="125" preserveAspectRatio="xMidYMid slice"/><rect width="175" height="125" class="frameB"/></g>
+      <g transform="translate(172,503) matrix(0.82,-0.16,0,1,0,0)"><image xlink:href="photos/sacre_coeur/93341989_396310999.jpg" width="175" height="125" preserveAspectRatio="xMidYMid slice"/><rect width="175" height="125" class="frameB"/></g>
+    </g>
+    <text x="60" y="662" class="body"><tspan class="math" font-size="20" fill="#ff2a1a">V</tspan><tspan class="math" font-size="14" baseline-shift="sub" fill="#ff2a1a">B</tspan><tspan dx="8">five other photos</tspan></text>
+
+    <use xlink:href="#arrow" transform="translate(366,385)"/>
+
+    <!-- 2 two reconstructions .............................................................. -->
+    <rect x="420" y="80" width="390" height="610" rx="18" class="panel"/>
+    <text x="442" y="118" class="head"><tspan class="num">2</tspan><tspan dx="10">Two projective reconstructions</tspan></text>
+    <image xlink:href="assets/cloud_cameras.png" x="430" y="138" width="370" height="277.5"/>
+    <text class="body">
+      <tspan x="442" y="448">Structure from motion (COLMAP) on all 10</tspan>
+      <tspan x="442" y="470">photos gives the cameras. Then each subset</tspan>
+      <tspan x="442" y="492">triangulates the 565 shared points on its own:</tspan>
+      <tspan x="442" y="514">two measurements <tspan class="math" font-size="18">A</tspan> and <tspan class="math" font-size="18">B</tspan> of the same points.</tspan>
+    </text>
+    <rect x="442" y="540" width="346" height="122" rx="12" fill="#f5f6f7"/>
+    <text class="body">
+      <tspan x="458" y="568">Each is known only up to a frame and</tspan>
+      <tspan x="458" y="590">a scale per point:</tspan>
+    </text>
+    <text x="615" y="640" text-anchor="middle" font-size="25" class="math">p<tspan font-size="17" baseline-shift="sub">k</tspan><tspan class="up" dx="8">↦</tspan><tspan dx="8">λ</tspan><tspan font-size="17" baseline-shift="sub">k</tspan><tspan dx="3">H p</tspan><tspan font-size="17" baseline-shift="sub">k</tspan><tspan class="up" font-size="18" dx="14" fill="#5f6368">(</tspan><tspan font-size="18" fill="#5f6368">H</tspan><tspan class="up" font-size="18" fill="#5f6368" dx="5">any 4×4)</tspan></text>
+
+    <use xlink:href="#arrow" transform="translate(816,385)"/>
+
+    <!-- 3 pencil cross-ratios (the CAPRI block) ............................................. -->
+    <rect x="870" y="80" width="330" height="610" rx="18" class="capri"/>
+    <text x="892" y="118" class="head"><tspan class="num">3</tspan><tspan dx="10">Pencil cross-ratios</tspan></text>
+    <image xlink:href="assets/pencil_on_photo.png" x="945" y="136" width="180" height="270"/>
+    <rect x="945" y="136" width="180" height="270" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <text x="1000" y="482" text-anchor="end" font-size="23" class="up">CR<tspan class="math" font-size="16" baseline-shift="sub">ij</tspan><tspan dx="8">=</tspan></text>
+    <text x="1080" y="470" text-anchor="middle" font-size="21" class="math">[ijce] [ijdf]</text>
+    <text x="1080" y="502" text-anchor="middle" font-size="21" class="math">[ijcf] [ijde]</text>
+    <line x1="1018" y1="478" x2="1142" y2="478" stroke="#202124" stroke-width="1.4"/>
+    <text class="body">
+      <tspan x="892" y="545">Four planes through the line <tspan class="math" font-size="18">p</tspan><tspan class="math" font-size="12" baseline-shift="sub">i</tspan><tspan class="math" font-size="18">p</tspan><tspan class="math" font-size="12" baseline-shift="sub">j</tspan> (white)</tspan>
+      <tspan x="892" y="567">have a cross-ratio, built from brackets</tspan>
+      <tspan x="892" y="589"><tspan class="math" font-size="18">[ijkl]</tspan> = det(<tspan class="math" font-size="18">p</tspan><tspan class="math" font-size="12" baseline-shift="sub">i</tspan>, <tspan class="math" font-size="18">p</tspan><tspan class="math" font-size="12" baseline-shift="sub">j</tspan>, <tspan class="math" font-size="18">p</tspan><tspan class="math" font-size="12" baseline-shift="sub">k</tspan>, <tspan class="math" font-size="18">p</tspan><tspan class="math" font-size="12" baseline-shift="sub">l</tspan>). Every frame</tspan>
+      <tspan x="892" y="611">and every point scale cancels.</tspan>
+    </text>
+    <rect x="892" y="630" width="286" height="40" rx="10" fill="#ffffff" stroke="#e9a68c" stroke-width="1.5"/>
+    <text x="1035" y="656" text-anchor="middle" class="body"><tspan class="math" font-size="18">n</tspan> points: <tspan class="up" font-size="18">3</tspan><tspan class="math" font-size="18">n</tspan><tspan class="up" font-size="18" dx="5">−</tspan><tspan class="up" font-size="18" dx="5">15</tspan> independent ones</text>
+
+    <use xlink:href="#arrow" transform="translate(1206,385)"/>
+
+    <!-- 4 consistency test .................................................................. -->
+    <rect x="1260" y="80" width="350" height="610" rx="18" class="panel"/>
+    <text x="1282" y="118" class="head"><tspan class="num">4</tspan><tspan dx="10">Consistency test</tspan></text>
+    <text x="1435" y="168" text-anchor="middle" font-size="21" class="math">S<tspan class="up" dx="5">=</tspan><tspan dx="5">Q</tspan><tspan class="up" font-size="14" baseline-shift="sub">0.1</tspan><tspan class="up">(|log|CR</tspan><tspan font-size="14" baseline-shift="sub">t</tspan><tspan class="up">(</tspan>A<tspan class="up">)| − log|CR</tspan><tspan font-size="14" baseline-shift="sub">t</tspan><tspan class="up">(</tspan>B<tspan class="up">)||)</tspan></text>
+    <text x="1435" y="194" text-anchor="middle" class="small">low quantile of the differences <tspan class="math" font-size="16" fill="#80868b">D</tspan><tspan class="math" font-size="11" baseline-shift="sub" fill="#80868b">t</tspan> over all pencils</text>
+    <image xlink:href="assets/discrepancy_density.png" x="1272" y="210" width="326" height="173.9"/>
+    <g class="body">
+      <rect x="1284" y="410" width="22" height="14" rx="3" fill="#2bd92b" fill-opacity="0.55" stroke="#1a9e1a" stroke-width="2"/>
+      <text x="1316" y="423">consistent</text>
+      <text x="1596" y="424" text-anchor="end" font-size="19" font-weight="700" fill="#1a9e1a"><tspan class="math" font-weight="400">S</tspan> = 0.029</text>
+      <rect x="1284" y="444" width="22" height="14" rx="3" fill="#ff2a1a" fill-opacity="0.15" stroke="#ff2a1a" stroke-width="2"/>
+      <text x="1316" y="457">170 points jittered by 8 px</text>
+      <text x="1596" y="458" text-anchor="end" font-size="19" font-weight="700" fill="#ff2a1a"><tspan class="math" font-weight="400">S</tspan> = 0.066</text>
+    </g>
+    <text class="small">
+      <tspan x="1284" y="490">Dashed lines: <tspan class="math" font-size="16" fill="#80868b">S</tspan> over 49,991 pencils. The jitter is on</tspan>
+      <tspan x="1284" y="508">the <tspan class="math" font-size="16" fill="#80868b">V</tspan><tspan class="math" font-size="11" baseline-shift="sub" fill="#80868b">B</tspan> detections of 30% of the points.</tspan>
+    </text>
+    <rect x="1284" y="540" width="148" height="62" rx="12" fill="#eaf8ea" stroke="#1a9e1a" stroke-width="2"/>
+    <text x="1358" y="566" text-anchor="middle" font-size="18" class="math">S<tspan class="up" dx="4">≤</tspan><tspan dx="4">c</tspan></text>
+    <text x="1358" y="589" text-anchor="middle" font-size="16" font-weight="700" fill="#1a7f1a">consistent</text>
+    <rect x="1446" y="540" width="148" height="62" rx="12" fill="#fff0ee" stroke="#ff2a1a" stroke-width="2"/>
+    <text x="1520" y="566" text-anchor="middle" font-size="18" class="math">S<tspan class="up" dx="4">&gt;</tspan><tspan dx="4">c</tspan></text>
+    <text x="1520" y="589" text-anchor="middle" font-size="16" font-weight="700" fill="#d0281a">inconsistent</text>
+    <text class="body">
+      <tspan x="1284" y="634">No frame, no cameras, no noise level:</tspan>
+      <tspan x="1284" y="656">one threshold serves every noise scale.</tspan>
+    </text>
+  </g>
+
+  <text x="30" y="738" class="small">Illustration on 10 public photos of the Sacré-Cœur (hloc sample data; YFCC100M / IMC, Flickr Creative Commons): 1,516 model points, 565 seen twice in each subset.</text>
+  <text x="30" y="758" class="small">It is not an evaluation. The evaluation of CAPRI is on synthetic data and pre-registered; there a known-noise GLRT and the Sampson error match or beat the test.</text>
+  <text x="30" y="778" class="small">Photos tilted for display; camera distances in panel 2 are shortened for display.</text>
+</svg>

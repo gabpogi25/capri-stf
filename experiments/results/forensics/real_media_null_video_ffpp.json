@@ -1,0 +1,38 @@
+{
+  "media": "video",
+  "nominal_alpha": 0.05,
+  "band": [
+    0.035,
+    0.065
+  ],
+  "n_train_items": 80,
+  "n_val_items": 38,
+  "gate_a_statistic": "frame",
+  "n_train_windows": 2,
+  "n_val_windows": 0,
+  "n_val_tested": 450,
+  "kappa_max": null,
+  "rejection_rate_empirical_null": 0.06,
+  "ks_to_uniform": 0.07905463474524244,
+  "ks_p": 0.006809962250099647,
+  "rejection_rate_chi2_diagnostic": null,
+  "passed": true,
+  "n_null_values": 904,
+  "min_attainable_p": 0.0011049723756906078,
+  "provenance": {
+    "git_commit": "f69665b",
+    "config_hash": "09e31f4ff8d4c02d",
+    "seed": 88200001,
+    "versions": {
+      "python": "3.12.10",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "cv2": "5.0.0",
+      "sklearn": "1.9.1",
+      "pandas": "3.0.6"
+    },
+    "inputs": {
+      "data\\manifests\\ffpp_c23.csv": "0bf950f10054f6f5b9e76511acb793bf0b141a0fa1bf827c56c81090630fd875"
+    }
+  }
+}

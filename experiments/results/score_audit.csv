@@ -1,0 +1,32 @@
+# Experiment: E1: re-audit checks 1-5; static hits {'experiments/run_exp14_degeneracy_matched.py': ['score_summary'], 'experiments/run_exp11b_trust_calibrated.py': ['fit_score_maps', 'score_statistics', '<lambda>', '<lambda>']}; unreviewed none
+# Seed: 42021
+# Backend: cpp
+# Code commit: 98b30b7
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+File,Label,Score,N,N_finite,AUC,F_floor_class0,F_floor_class1,U,Perm_p,Abstain_leak,Static_label_path,Verdict
+exp6b_pencil_drift.csv,Label_Excessive,pencil_q10,2000,2000,0.9838002731157218,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+exp6b_pencil_drift.csv,Label_Excessive,registration_rms,2000,2000,0.9722759509993553,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+exp6b_pencil_drift.csv,Label_Excessive,median_tuple_dJ,2000,2000,0.9536994765949438,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+exp6b_pencil_drift.csv,Label_Excessive,single_tuple_dJ,2000,2000,0.7108046902218965,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+exp14_samples.csv,Degenerate,m8_capri_coplanarity,8640,8640,0.9828437861689815,,,1.0,0.000999000999000999,0.0,False,RETAINED
+exp14_samples.csv,Degenerate,m8_capri_kappa,8640,8640,0.8569020664544753,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+exp14_samples.csv,Degenerate,m8_capri_sigma,8640,8640,0.9591588300540124,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+exp14_samples.csv,Degenerate,m8_degensac_h_inliers,8640,8640,0.9365402560763889,,,0.0005787037037037037,0.000999000999000999,0.0,False,INCONCLUSIVE
+exp14_samples.csv,Degenerate,m8_homography_ls6,8640,8640,0.9829808666087962,,,1.0,0.000999000999000999,0.0,False,RETAINED
+exp11b_items.csv,Y_tol0.1,R0,49259,49259,0.6273287974813452,0.0,0.0,0.32286485718345886,0.000999000999000999,0.0,False,RETAINED
+exp11b_items.csv,Y_tol0.1,K,49259,49259,0.6246466498322322,0.0,0.0,0.31527233601981364,0.000999000999000999,0.0,False,RETAINED
+exp8b_dataset.csv,label_bad,pencil_q10,9000,9000,0.867308106510654,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+exp8b_dataset.csv,label_bad,rho_indep,9000,9000,0.7573590755229639,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+exp8b_dataset.csv,label_bad,kappa_J,9000,9000,0.6345618379120849,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+true_synthetic_baselines.csv,Degenerate,capri_ls,13500,13500,0.9228982962962963,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+true_synthetic_baselines.csv,Degenerate,capri_kappa,13500,13500,0.9271704691358025,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+true_synthetic_baselines.csv,Degenerate,capri_sigma,13500,13500,0.9968911851851852,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+true_synthetic_baselines.csv,Degenerate,degensac_h_inliers,13500,13500,0.9612306296296297,,,0.00037037037037037035,0.000999000999000999,0.0,False,INCONCLUSIVE
+exp5_rho_dist.csv,Contains_Corrupted,rho,7000,7000,0.9805559065188392,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+exp5_rho_dist.csv,Contains_Corrupted,rho_full,7000,7000,0.9900464069476346,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED
+exp9_ablation.csv,Tuple_Bad,Rho,90000,90000,0.8153255529365131,0.0,0.0,0.06666666666666667,0.000999000999000999,0.0,False,RETAINED
+exp9_ablation.csv,Tuple_Bad,LS,90000,88260,0.5660287927431815,0.0,0.0,0.06666666666666667,0.000999000999000999,0.03081827842720508,False,RETAINED
+exp9_ablation.csv,Tuple_Bad,Kappa,90000,88260,0.5729240519070214,0.0,0.0,0.06666666666666667,0.000999000999000999,0.03081827842720508,False,RETAINED
+exp9_ablation.csv,Tuple_Bad,Pencil_Q10,90000,90000,0.9023826346993242,0.0,0.0,0.06666666666666667,0.000999000999000999,0.0,False,RETAINED
+f6_signal_combination.csv,Correct,LS,10000,10000,0.49959597163707925,0.0,0.0,1.0,0.954045954045954,0.0,False,INCONCLUSIVE
+f6_signal_combination.csv,Correct,Rho,10000,10000,0.11817061043438434,0.0,0.0,1.0,0.000999000999000999,0.0,False,RETAINED

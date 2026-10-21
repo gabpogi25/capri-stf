@@ -1,0 +1,16 @@
+# Experiment: Abstract photo demo: COLMAP on 10 Sacre-Coeur photos, two view subsets, injected jitter (illustration)
+# Seed: 42022
+# Backend: cpp
+# Code commit: f1ade76
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+Quantity,Value
+Photos registered,10.0
+Model points,1516.0
+Mean reprojection error (px),0.3208589195914388
+Points seen twice in each subset,565.0
+Injected points (8 px jitter on V_B),170.0
+Pencil cross-ratios compared,49991.0
+"S = Q0.1, consistent",0.02915032132167994
+"S = Q0.1, injected",0.06640418934165285
+"Median point score, injected points",0.8348559974757119
+"Median point score, other points",0.7206661105013517

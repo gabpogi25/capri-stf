@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# C++ Build outputs
+build/
+cpp_core/build/
+cpp_core/lib.*
+cpp_core/temp.*
+*.pyd
+*.exp
+*.lib
+*.obj
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project specifics
+data/*
+!data/manifests/
+data/manifests/*.csv
+!data/manifests/manifest_template.csv
+outputs/
+media/
+*.log
+
+# VS Code
+.vscode/
+
+# Built C++ extension and R session files
+cpp_core/*.so
+cpp_core/*.pyd
+.RData
+.Rhistory
+
+# Forensic statistic caches (recomputable)
+experiments/results/forensics/cache_*.csv
+
+# Math-lab cached datasets (regenerated from seeds)
+experiments/math_lab/data/
+cpp_core/tmp/
+experiments/results/smoke_*
+
+# COLMAP binaries are downloaded by setup_env.ps1 (not versioned)
+colmap/
+
+# Local build output
+/paper/

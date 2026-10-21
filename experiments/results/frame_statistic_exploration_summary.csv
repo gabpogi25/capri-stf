@@ -1,0 +1,9 @@
+# Experiment: EXPLORATORY frame-coordinate statistic: AUC, TPR at 5% FPR, paired bootstrap vs pencil_q10
+# Seed: 90200000
+# Backend: cpp
+# Code commit: 1c81de0
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+Method,N,AUC,TPR_at_5pct_FPR,dAUC_vs_pencil_Lo,dAUC_vs_pencil_Hi
+pencil_q10,1000,0.9908151642040076,0.9486692015209125,0.0,0.0
+frame_q10,1000,0.7526511687603279,0.19961977186311788,-0.2670387144093696,-0.20748741910278806
+frame_q50,1000,0.80843400555101,0.34980988593155893,-0.20801765668735056,-0.15461868086695724

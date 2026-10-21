@@ -1,0 +1,9 @@
+# Experiment: E1: audit self-test (must fire)
+# Seed: 42021
+# Backend: cpp
+# Code commit: 98b30b7
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+Check,N,N_finite,AUC,F_floor_class0,F_floor_class1,U,Perm_p,Abstain_leak,Fired
+rho_one_set_flagged_by_floor,400.0,400.0,0.5072875,1.0,1.0,0.24,0.8031968031968032,0.0,True
+planted_label_reader_flagged,,,,,,,,,True
+planted_abstention_leak_flagged,500.0,240.0,,,,1.0,0.000999000999000999,0.5,True

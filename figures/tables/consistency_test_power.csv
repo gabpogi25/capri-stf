@@ -1,0 +1,5 @@
+Type,Power_combined,Power_pencil,Power_sampson,Best_single,Diff_CI_Lo,Diff_CI_Hi
+jitter,1,0.955,1,sampson_mean,0,0
+drift,1,0.6525,1,sampson_mean,0,0
+warp,0.57,0.48,0.3575,pencil_q10,0.04249999999999998,0.135
+swap,0.95,0.7325,0.83,sampson_mean,0.08999999999999997,0.15249999999999997

@@ -1,0 +1,29 @@
+# Experiment: Calibration / test scenes for real_pencil
+# Seed: 87000000
+# Backend: cpp
+# Code commit: 73c3208
+# Python 3.12.10, numpy 2.5.4, pandas 3.0.6
+Dataset,Scene,N_Images,Batch,Role,Family
+ETs,ET,9,2,test,ETs
+ETs,another_ET,10,1,test,ETs
+fbk_vineyard,vineyard_split_1,43,2,cal,fbk_vineyard
+fbk_vineyard,vineyard_split_2,35,2,cal,fbk_vineyard
+imc2023_haiper,bike,15,1,cal,imc2023
+imc2023_haiper,chairs,16,2,cal,imc2023
+imc2023_haiper,fountain,23,2,test,imc2023
+imc2023_heritage,cyprus,30,2,cal,imc2023
+imc2023_heritage,dioscuri,75,1,test,imc2023
+imc2023_heritage,wall,43,1,test,imc2023
+imc2023_theather_imc2024_church,church,50,1,test,imc2023
+imc2023_theather_imc2024_church,kyiv-puppet-theater,26,1,cal,imc2023
+imc2024_dioscuri_baalshamin,baalshamin,49,1,cal,imc2024
+imc2024_dioscuri_baalshamin,dioscuri,65,1,cal,imc2024
+pt_brandenburg_british_buckingham,brandenburg_gate,75,2,test,pt
+pt_brandenburg_british_buckingham,british_museum,75,2,test,pt
+pt_brandenburg_british_buckingham,buckingham_palace,75,2,cal,pt
+pt_piazzasanmarco_grandplace,piazza_san_marco,68,1,cal,pt
+pt_sacrecoeur_trevi_tajmahal,sacre_coeur,75,2,cal,pt
+pt_sacrecoeur_trevi_tajmahal,taj_mahal,75,2,test,pt
+pt_sacrecoeur_trevi_tajmahal,trevi_fountain,75,2,test,pt
+stairs,stairs_split_1,28,2,test,stairs
+stairs,stairs_split_2,23,1,test,stairs

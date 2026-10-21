@@ -1,0 +1,43 @@
+# Experiment: Real-data pencil test: sizes, powers, AUCs
+# Seed: 87500000
+# Backend: cpp
+# Code commit: 13b10b6
+# Python 3.12.10, numpy 2.5.4, pandas 3.0.6
+Statistic,Injection,Size,Size_Valid,N_Test_Windows,N_Test_Scenes,Coverage,Power,AUC,Transfer_From,Transfer_To
+pencil_q10,none,0.013157894736842105,False,152,4.0,0.9013157894736842,,,,
+pencil_q10,jitter,,False,152,4.0,,,,,
+pencil_q10,drift,,False,152,4.0,,,,,
+pencil_q10,warp,,False,152,4.0,,,,,
+pencil_q10,swap,,False,152,4.0,,,,,
+acat,none,0.125,False,152,4.0,0.9013157894736842,,,,
+acat,jitter,,False,152,4.0,,,,,
+acat,drift,,False,152,4.0,,,,,
+acat,warp,,False,152,4.0,,,,,
+acat,swap,,False,152,4.0,,,,,
+sampson_mean,none,0.20394736842105263,False,152,4.0,0.9013157894736842,,,,
+sampson_mean,jitter,,False,152,4.0,,,,,
+sampson_mean,drift,,False,152,4.0,,,,,
+sampson_mean,warp,,False,152,4.0,,,,,
+sampson_mean,swap,,False,152,4.0,,,,,
+combination,none,0.07894736842105263,False,152,4.0,0.9013157894736842,,,,
+combination,jitter,,False,152,4.0,,,,,
+combination,drift,,False,152,4.0,,,,,
+combination,warp,,False,152,4.0,,,,,
+combination,swap,,False,152,4.0,,,,,
+split_glrt,none,0.42105263157894735,False,152,4.0,0.9013157894736842,,,,
+split_glrt,jitter,,False,152,4.0,,,,,
+split_glrt,drift,,False,152,4.0,,,,,
+split_glrt,warp,,False,152,4.0,,,,,
+split_glrt,swap,,False,152,4.0,,,,,
+pencil_q10,none,0.07692307692307693,,39,,,,,imc2024,ETs
+acat,none,0.358974358974359,,39,,,,,imc2024,ETs
+sampson_mean,none,0.5128205128205128,,39,,,,,imc2024,ETs
+pencil_q10,none,0.02654867256637168,,113,,,,,imc2024,imc2023
+acat,none,0.04424778761061947,,113,,,,,imc2024,imc2023
+sampson_mean,none,0.08849557522123894,,113,,,,,imc2024,imc2023
+pencil_q10,none,0.02564102564102564,,39,,,,,pt,ETs
+acat,none,0.38461538461538464,,39,,,,,pt,ETs
+sampson_mean,none,0.717948717948718,,39,,,,,pt,ETs
+pencil_q10,none,0.008849557522123894,,113,,,,,pt,imc2023
+acat,none,0.04424778761061947,,113,,,,,pt,imc2023
+sampson_mean,none,0.10619469026548672,,113,,,,,pt,imc2023

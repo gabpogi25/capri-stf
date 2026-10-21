@@ -1,0 +1,26 @@
+# commit de33735; Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release); Mathlib v4.35.0
+[PASS] lake build: every proof checks, no sorry
+[PASS] control frame_cr with y/w in place of z/w: Lean rejects it
+[PASS] control frame_block_rank with a repeated row: Lean rejects it
+[PASS] control log_abs_change with half the bound: Lean rejects it
+[PASS] control many_above with T - k + 2: Lean rejects it
+[PASS] control hadamard with half the bound: Lean rejects it
+[PASS] control det_perturb with half the bound: Lean rejects it
+[PASS] control size_bound_interp with k = ceil((T-1)p): Lean rejects it
+[PASS] control limit_law with 2 mu in place of sqrt 2 mu: Lean rejects it
+[PASS] control small_ball_constant with 16/pi^2: Lean rejects it
+[PASS] control unused_eq with [1235] for [1236]: Lean rejects it
+[PASS] control rank_all_pencils with 3n - 14: Lean rejects it
+[PASS] control orbitMap_range_finrank with n + 16: Lean rejects it
+[PASS] control separation_signed with points k >= 6 only: Lean rejects it
+[PASS] control no_reverse with [1236] = 1: Lean rejects it
+[PASS] control gaussian_abs_gt with 1/12: Lean rejects it
+[PASS] control rate_used with c/d^2: Lean rejects it
+[PASS] control taylor_uniform with a cubic remainder: Lean rejects it
+[PASS] control size_power_limit with P(Z > c): Lean rejects it
+[PASS] control euclid_le_sup with factor 1: Lean rejects it
+[PASS] control toSphere_univ_E4 with 2 in place of 4: Lean rejects it
+[PASS] control unif_abs_inner_lt with Psi(a)/2: Lean rejects it
+[PASS] control vol_coneII with pi^2/4: Lean rejects it
+[PASS] control small_ball_limit with 16/pi^2: Lean rejects it
+ALL LEAN CHECKS PASSED

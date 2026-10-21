@@ -1,0 +1,16 @@
+{
+  "git_commit": "1e902a9",
+  "config_hash": "09e31f4ff8d4c02d",
+  "seed": 88100002,
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "cv2": "5.0.0",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.6"
+  },
+  "inputs": {
+    "data\\manifests\\videos_v2_batch1.csv": "94580b258af0740edff972d292a4a04d52576a0b676b8d8f500c39e35ffd2163"
+  }
+}

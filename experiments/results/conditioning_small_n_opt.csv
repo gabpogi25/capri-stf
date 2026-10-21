@@ -1,0 +1,10 @@
+# Experiment: conditioning experiment: Small-N OPT
+# Seed: 42004
+# Backend: cpp
+# Code commit: 4d4135d
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+N,Budget_k,OPT_Coverage,Greedy_Coverage,Greedy_OPT_Ratio,Seed
+8,2,1.0,1.0,1.0,42004
+8,3,1.0,1.0,1.0,42004
+8,4,1.0,1.0,1.0,42004
+8,5,1.0,1.0,1.0,42004

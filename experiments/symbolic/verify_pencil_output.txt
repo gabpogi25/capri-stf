@@ -1,0 +1,56 @@
+V1  Lemma 2.1: every pencil cross-ratio is invariant under p_k -> lambda_k A p_k (exact)
+  [PASS] all 1260 pencil cross-ratios of 8 points unchanged by a gauge
+  [PASS] control: an unbalanced bracket ratio [ijce]/[ijcf] CHANGES under the gauge
+V2  Prop. 2.3: J1, J2, J3 are pencil cross-ratios (randomized exact identity test)
+  [PASS] J1 = CR_12(3,6;4,5), J2 = CR_34(1,2;5,6), J3 = CR_56(1,4;2,3) at 30 random integer points
+  [PASS] control: J1 differs from a wrong pencil ratio CR_12(3,4;5,6)
+V3  Thm. 2.5: GP relation for {a,b}  <=>  CR_ab(c,d;e,f) + CR_ab(c,e;d,f) = 1 (randomized exact)
+  [PASS] all 15 GP relations vanish at 30 random integer configurations
+  [PASS] CR_ab(c,d;e,f) + CR_ab(c,e;d,f) = 1 for all 15 pencils
+  [PASS] control: CR(c,d;e,f) + CR(c,f;d,e) != 1 (a wrong pairing)
+V4  Thm. 3.2: the pencil family has generic rank 3n - 15 = 21 (exact, mod p = 2^61 - 1)
+  [PASS] orbit tangent has rank >= 27 (expected 16 + n - 1 = 27)
+  [PASS] sanity check: every pencil gradient is orthogonal to the orbit tangent mod p
+  [PASS] rank of 240 pencil gradients mod p = 21; with the tangent bound this gives rank_Q = 21
+  [PASS] control: adding a random row raises the rank to 22
+  [PASS] control: J1, J2, J3 of one 6-tuple have rank 3 (< 3n - 15)
+  [PASS] the three pairings of one 4-set on one line have rank 1 (functions of one cross-ratio)
+V4  Thm. 3.2: the pencil family has generic rank 3n - 15 = 3 (exact, mod p = 2^61 - 1)
+  [PASS] orbit tangent has rank >= 21 (expected 16 + n - 1 = 21)
+  [PASS] sanity check: every pencil gradient is orthogonal to the orbit tangent mod p
+  [PASS] rank of 45 pencil gradients mod p = 3; with the tangent bound this gives rank_Q = 3
+  [PASS] control: adding a random row raises the rank to 4
+  [PASS] the three pairings of one 4-set on one line have rank 1 (functions of one cross-ratio)
+V4  Thm. 3.2: the pencil family has generic rank 3n - 15 = 6 (exact, mod p = 2^61 - 1)
+  [PASS] orbit tangent has rank >= 22 (expected 16 + n - 1 = 22)
+  [PASS] sanity check: every pencil gradient is orthogonal to the orbit tangent mod p
+  [PASS] rank of 315 pencil gradients mod p = 6; with the tangent bound this gives rank_Q = 6
+  [PASS] control: adding a random row raises the rank to 7
+  [PASS] control: J1, J2, J3 of one 6-tuple have rank 3 (< 3n - 15)
+  [PASS] the three pairings of one 4-set on one line have rank 1 (functions of one cross-ratio)
+V4  Thm. 3.2: the pencil family has generic rank 3n - 15 = 9 (exact, mod p = 2^61 - 1)
+  [PASS] orbit tangent has rank >= 23 (expected 16 + n - 1 = 23)
+  [PASS] sanity check: every pencil gradient is orthogonal to the orbit tangent mod p
+  [PASS] rank of 240 pencil gradients mod p = 9; with the tangent bound this gives rank_Q = 9
+  [PASS] control: adding a random row raises the rank to 10
+  [PASS] control: J1, J2, J3 of one 6-tuple have rank 3 (< 3n - 15)
+  [PASS] the three pairings of one 4-set on one line have rank 1 (functions of one cross-ratio)
+V5  Prop. 4.3: Gaussian mean-field quantile x_p ~ p sqrt(pi/2) H as p -> 0 (numerical)
+  [PASS] (a) lower bound x_p >= p sqrt(pi/2) H at p = (0.1, 0.01, 0.001, 0.0001, 1e-05, 1e-06, 1e-07): min ratio 1.000000000012
+  [PASS] (b) ratio -> 1 as p -> 0: [1.145327, 1.019658, 1.00071, 1.000007, 1.0, 1.0, 1.0]
+      (c) not applicable: x_0.1 > min sigma_t; ratio at p = 0.1 is 1.145
+  [PASS] realized Q_0.1 / mean-field x_0.1: median 1.020, sd of log 0.214
+  [PASS] inflating the largest 1% of scales 100x: H moves 1.00001x <= bound 1/(1 - w_S) = 1.00001; RMS moves 99.8x
+  [PASS] control: the bound is violated if the inflated set is taken from the SMALLEST scales
+V6  Prop. 5.1: 0.674 <= median max|dlogJ| / (sigma kappa_J) <= 1.383 in the first-order regime (numerical)
+  [PASS] ratio range [0.627, 1.072] within [0.674 - 0.070, 1.383 + 0.146] (4 Monte Carlo s.e. each side)
+  [PASS] control: the same ratio with sqrt(L(S)) in place of kappa spans 394x (kappa: 1.71x)
+      note: in 49/150 configurations the smallest bracket (which sets L(S)) is not one of the 11 brackets used by J1-J3
+V7  Thm. 6.1: rho never exceeds tau_exact under adversarial perturbations (numerical)
+  [PASS] two shared measurements: max rho / tau_exact over 25 searches = 0.2148 (<= 1)
+  [PASS] independent representatives per bracket: max rho / tau_exact = 0.4214 (<= 1)
+      (no failure control: the proof is analytic; a search can only fail to find a counterexample)
+V8  Prop. 6.3: Tyler whitening of X and of A X agree up to an orthogonal map (numerical)
+  [PASS] Tyler: max residual after the best orthogonal alignment = 3.11e-12
+  [PASS] control: covariance whitening of unit columns is NOT equivariant (residual 5.32e-01)
+ALL CHECKS PASSED

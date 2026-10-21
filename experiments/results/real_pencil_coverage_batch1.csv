@@ -1,0 +1,16 @@
+# Experiment: Real-data pencil test: windows found per scene, batch 1
+# Seed: 87100000
+# Backend: cpp
+# Code commit: 13b10b6
+# Python 3.12.10, numpy 2.5.4, pandas 3.0.6
+Dataset,Scene,Role,Model_Found,N_Windows
+ETs,another_ET,test,True,39
+imc2023_haiper,bike,cal,True,4
+imc2023_heritage,dioscuri,test,True,30
+imc2023_heritage,wall,test,True,3
+imc2023_theather_imc2024_church,church,test,True,80
+imc2023_theather_imc2024_church,kyiv-puppet-theater,cal,True,5
+imc2024_dioscuri_baalshamin,baalshamin,cal,True,80
+imc2024_dioscuri_baalshamin,dioscuri,cal,True,4
+pt_piazzasanmarco_grandplace,piazza_san_marco,cal,True,80
+stairs,stairs_split_2,test,True,0

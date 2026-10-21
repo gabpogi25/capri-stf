@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CAPRI paper, Figure 1 (teaser). Layout made for Inkscape; edit this template, not teaser.svg.
+     Images: assets/ (render_assets.R) and ../abstracts/assets/ (figures/abstracts/render_assets.R).
+     Placeholders in double braces are filled from the result files by render_assets.R. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1100" height="430" viewBox="0 0 1100 430">
+  <defs>
+    <style>
+      text { font-family: Roboto, sans-serif; }
+      .head { font-size: 19px; font-weight: 500; fill: #202124; }
+      .num { font-size: 19px; font-weight: 700; fill: #c5532f; }
+      .body { font-size: 14.5px; fill: #3c4043; }
+      .small { font-size: 12.5px; fill: #80868b; }
+      .m { font-family: 'Latin Modern Roman', serif; font-style: italic; fill: #202124; }
+      .r { font-family: 'Latin Modern Roman', serif; font-style: normal; fill: #202124; }
+      .panel { fill: #ffffff; stroke: #d5d7da; stroke-width: 1.6; }
+      .frameA { fill: none; stroke: #1f77ff; stroke-width: 3.5; }
+      .frameB { fill: none; stroke: #ff2a1a; stroke-width: 3.5; }
+    </style>
+    <path id="arrow" d="M0,-6 H20 V-14 L36,0 L20,14 V6 H0 Z" fill="#ffffff" stroke="#9aa0a6" stroke-width="2" stroke-linejoin="round"/>
+  </defs>
+  <rect width="1100" height="430" fill="#ffffff"/>
+
+  <!-- 1 two view subsets ................................................................ -->
+  <rect x="6" y="6" width="252" height="418" rx="14" class="panel"/>
+  <text x="22" y="36" class="head"><tspan class="num">1</tspan><tspan dx="8">Two view subsets</tspan></text>
+  <image xlink:href="../abstracts/assets/photo_A_points.png" x="22" y="54" width="118" height="177"/>
+  <rect x="22" y="54" width="118" height="177" class="frameA"/>
+  <image xlink:href="../abstracts/assets/photo_B_points.png" x="150" y="96" width="94" height="70.5"/>
+  <rect x="150" y="96" width="94" height="70.5" class="frameB"/>
+  <text x="22" y="254" class="body"><tspan class="m" font-size="17" fill="#1f77ff">V</tspan><tspan class="m" font-size="12" baseline-shift="sub" fill="#1f77ff">A</tspan><tspan dx="6">and</tspan><tspan dx="6" class="m" font-size="17" fill="#ff2a1a">V</tspan><tspan class="m" font-size="12" baseline-shift="sub" fill="#ff2a1a">B</tspan><tspan dx="6">: disjoint photos of</tspan></text>
+  <text class="body"><tspan x="22" y="275">one scene ({{N_PHOTOS}} in all). Dots: the</tspan><tspan x="22" y="296">{{N_COMMON}} points seen at least twice</tspan><tspan x="22" y="317">in each subset; red: the {{N_INJ}} points</tspan><tspan x="22" y="338">jittered for the test in panel 4.</tspan></text>
+
+  <use xlink:href="#arrow" transform="translate(262,215) scale(0.62)"/>
+
+  <!-- 2 two reconstructions ............................................................... -->
+  <rect x="290" y="6" width="252" height="418" rx="14" class="panel"/>
+  <text x="306" y="36" class="head"><tspan class="num">2</tspan><tspan dx="8">Two reconstructions</tspan></text>
+  <image xlink:href="assets/teaser_cloud_A.png" x="298" y="52" width="118" height="94.4"/>
+  <image xlink:href="assets/teaser_cloud_B.png" x="418" y="52" width="118" height="94.4"/>
+  <text x="352" y="164" class="m" font-size="19" fill="#1f77ff">A</text>
+  <text x="472" y="164" class="m" font-size="19" fill="#ff2a1a">B</text>
+  <text class="body"><tspan x="306" y="196">Each subset triangulates the same</tspan><tspan x="306" y="217">points on its own. The coordinates</tspan><tspan x="306" y="238">differ by an unknown frame and a</tspan><tspan x="306" y="259">scale per point:</tspan></text>
+  <rect x="306" y="276" width="220" height="44" rx="10" fill="#f1f3f4"/>
+  <text x="322" y="304"><tspan class="m" font-size="19">p</tspan><tspan class="m" font-size="13" baseline-shift="sub">k</tspan><tspan class="r" font-size="19" dx="5">↦</tspan><tspan class="m" font-size="19" dx="5">λ</tspan><tspan class="m" font-size="13" baseline-shift="sub">k</tspan><tspan class="m" font-size="19" dx="2">H p</tspan><tspan class="m" font-size="13" baseline-shift="sub">k</tspan><tspan class="r" font-size="15" dx="8">(</tspan><tspan class="m" font-size="15">H</tspan><tspan class="r" font-size="15">&#160;any 4×4)</tspan></text>
+  <text class="small"><tspan x="306" y="350">Colours: the photo colour of each point.</tspan><tspan x="306" y="368">Same points, so same colours.</tspan></text>
+
+  <use xlink:href="#arrow" transform="translate(546,215) scale(0.62)"/>
+
+  <!-- 3 pencil cross-ratios ............................................................... -->
+  <rect x="574" y="6" width="252" height="418" rx="14" class="panel" style="fill:#fdf0ea;stroke:#e9a68c"/>
+  <text x="590" y="36" class="head"><tspan class="num">3</tspan><tspan dx="8">Frame-free numbers</tspan></text>
+  <image xlink:href="../abstracts/assets/pencil_on_photo.png" x="590" y="54" width="104" height="156"/>
+  <text x="704" y="96" class="body">Four planes</text>
+  <text x="704" y="116" class="body">through the line</text>
+  <text x="704" y="138"><tspan class="m" font-size="17">p</tspan><tspan class="m" font-size="12" baseline-shift="sub">i</tspan><tspan class="m" font-size="17">p</tspan><tspan class="m" font-size="12" baseline-shift="sub">j</tspan><tspan class="body" dx="4">(white)</tspan></text>
+  <text x="704" y="158" class="body">have a</text>
+  <text x="704" y="178" class="body">cross-ratio:</text>
+  <text x="594" y="262"><tspan class="r" font-size="20">CR</tspan><tspan class="m" font-size="13" baseline-shift="sub">ij</tspan><tspan class="r" font-size="20" dx="6">=</tspan></text>
+  <text x="672" y="248"><tspan class="r" font-size="18">[</tspan><tspan class="m" font-size="18">ijce</tspan><tspan class="r" font-size="18">] [</tspan><tspan class="m" font-size="18">ijdf</tspan><tspan class="r" font-size="18">]</tspan></text>
+  <line x1="668" y1="256" x2="796" y2="256" stroke="#202124" stroke-width="1.3"/>
+  <text x="672" y="278"><tspan class="r" font-size="18">[</tspan><tspan class="m" font-size="18">ijcf</tspan><tspan class="r" font-size="18">] [</tspan><tspan class="m" font-size="18">ijde</tspan><tspan class="r" font-size="18">]</tspan></text>
+  <text class="body"><tspan x="590" y="314">with brackets <tspan class="r" font-size="16">[</tspan><tspan class="m" font-size="16">ijkl</tspan><tspan class="r" font-size="16">]&#160;=&#160;det(</tspan><tspan class="m" font-size="16">p</tspan><tspan class="m" font-size="11" baseline-shift="sub">i</tspan><tspan class="r" font-size="16">, …)</tspan>.</tspan><tspan x="590" y="335">Every frame and every point scale</tspan><tspan x="590" y="356">cancels. <tspan class="m" font-size="16">n</tspan> points carry</tspan><tspan x="590" y="377"><tspan class="r" font-size="16">3</tspan><tspan class="m" font-size="16">n</tspan><tspan class="r" font-size="16">&#160;−&#160;15</tspan> independent ones.</tspan></text>
+
+  <use xlink:href="#arrow" transform="translate(830,215) scale(0.62)"/>
+
+  <!-- 4 consistency test ................................................................... -->
+  <rect x="858" y="6" width="236" height="418" rx="14" class="panel"/>
+  <text x="874" y="36" class="head"><tspan class="num">4</tspan><tspan dx="8">Consistency test</tspan></text>
+  <image xlink:href="../abstracts/assets/photo_A_scores.png" x="874" y="54" width="104" height="156"/>
+  <defs><linearGradient id="score" x1="0" x2="1"><stop offset="0" stop-color="#2bd92b"/><stop offset="0.5" stop-color="#ffd21a"/><stop offset="1" stop-color="#ff2a1a"/></linearGradient></defs>
+  <rect x="990" y="66" width="12" height="130" rx="3" fill="url(#score)" transform="rotate(180,996,131)"/>
+  <text x="1008" y="76" class="small">high</text>
+  <text x="1008" y="196" class="small">low</text>
+  <text x="1008" y="136" class="small">pencil</text>
+  <text x="1008" y="152" class="small">score</text>
+  <text x="874" y="244"><tspan class="m" font-size="18">S</tspan><tspan class="r" font-size="18">&#160;=&#160;</tspan><tspan class="m" font-size="18">Q</tspan><tspan class="r" font-size="12" baseline-shift="sub">0.1</tspan><tspan class="r" font-size="18" baseline-shift="0">(|Δ&#160;log|CR</tspan><tspan class="m" font-size="12" baseline-shift="sub">t</tspan><tspan class="r" font-size="18">||)</tspan></text>
+  <rect x="874" y="262" width="204" height="36" rx="8" fill="#e6f4ea" stroke="#34a853" stroke-width="1.5"/>
+  <text x="886" y="286" class="body">consistent<tspan dx="18" class="m" font-size="17">S</tspan><tspan class="r" font-size="17">&#160;=&#160;{{S_CONS}}</tspan></text>
+  <rect x="874" y="306" width="204" height="36" rx="8" fill="#fce8e6" stroke="#ea4335" stroke-width="1.5"/>
+  <text x="886" y="330" class="body">jittered<tspan dx="34" class="m" font-size="17">S</tspan><tspan class="r" font-size="17">&#160;=&#160;{{S_INJ}}</tspan></text>
+  <text class="small"><tspan x="874" y="366">Jittered: {{N_INJ}} points moved by 8 px</tspan><tspan x="874" y="384">in <tspan class="m">V</tspan><tspan class="m" font-size="9" baseline-shift="sub">B</tspan>. No frame, camera or noise</tspan><tspan x="874" y="402">level is used. {{N_PENCILS}} pencils.</tspan></text>
+</svg>

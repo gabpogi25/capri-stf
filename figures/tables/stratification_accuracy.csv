@@ -1,0 +1,4 @@
+Noise_Sigma,N,Threshold_Accuracy,Rank_Accuracy
+0,4000,0.6455,1
+1e-6,4000,0.666,0.95475
+1e-4,4000,0.734,0.9555

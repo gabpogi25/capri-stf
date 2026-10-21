@@ -1,0 +1,7 @@
+# Macaulay2 1.22; command: M2 --script experiments/symbolic/verify_plucker.m2
+1. Sigma_1, Sigma_2, Sigma_3 vanish: {true, true, true}
+2. All 15 Grassmann-Plucker relations vanish: true
+3. Sigma_1..3 at b*: {0, 0, 0}; {1,4} relation at b*: 1
+4. m=4 (Boundary): codimension 1, expected 1
+4. m=5 (Compound): codimension 2, expected 2
+4. m=6 (Critical): codimension 3, expected 3

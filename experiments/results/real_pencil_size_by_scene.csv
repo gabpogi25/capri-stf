@@ -1,0 +1,56 @@
+# Experiment: Real-data pencil test: size per test scene (descriptive)
+# Seed: 87600000
+# Backend: cpp
+# Code commit: 68db916
+# Python 3.13.16, numpy 2.5.3, pandas 3.0.5
+Statistic,Scene,Rejections,Windows,Size
+pencil_q10,ETs/ET,0,49,0.0
+pencil_q10,ETs/another_ET,2,39,0.05128205128205128
+pencil_q10,imc2023_haiper/fountain,0,13,0.0
+pencil_q10,imc2023_heritage/dioscuri,0,30,0.0
+pencil_q10,imc2023_heritage/wall,0,3,0.0
+pencil_q10,imc2023_theather_imc2024_church/church,1,80,0.0125
+pencil_q10,pt_brandenburg_british_buckingham/brandenburg_gate,0,80,0.0
+pencil_q10,pt_brandenburg_british_buckingham/british_museum,3,80,0.0375
+pencil_q10,pt_sacrecoeur_trevi_tajmahal/taj_mahal,2,80,0.025
+pencil_q10,pt_sacrecoeur_trevi_tajmahal/trevi_fountain,1,80,0.0125
+acat,ETs/ET,0,49,0.0
+acat,ETs/another_ET,14,39,0.358974358974359
+acat,imc2023_haiper/fountain,0,13,0.0
+acat,imc2023_heritage/dioscuri,1,30,0.03333333333333333
+acat,imc2023_heritage/wall,0,3,0.0
+acat,imc2023_theather_imc2024_church/church,2,80,0.025
+acat,pt_brandenburg_british_buckingham/brandenburg_gate,4,80,0.05
+acat,pt_brandenburg_british_buckingham/british_museum,2,80,0.025
+acat,pt_sacrecoeur_trevi_tajmahal/taj_mahal,10,80,0.125
+acat,pt_sacrecoeur_trevi_tajmahal/trevi_fountain,3,80,0.0375
+sampson_mean,ETs/ET,22,49,0.4489795918367347
+sampson_mean,ETs/another_ET,13,39,0.3333333333333333
+sampson_mean,imc2023_haiper/fountain,1,13,0.07692307692307693
+sampson_mean,imc2023_heritage/dioscuri,1,30,0.03333333333333333
+sampson_mean,imc2023_heritage/wall,0,3,0.0
+sampson_mean,imc2023_theather_imc2024_church/church,9,80,0.1125
+sampson_mean,pt_brandenburg_british_buckingham/brandenburg_gate,3,80,0.0375
+sampson_mean,pt_brandenburg_british_buckingham/british_museum,4,80,0.05
+sampson_mean,pt_sacrecoeur_trevi_tajmahal/taj_mahal,10,80,0.125
+sampson_mean,pt_sacrecoeur_trevi_tajmahal/trevi_fountain,4,80,0.05
+combination,ETs/ET,13,49,0.2653061224489796
+combination,ETs/another_ET,3,39,0.07692307692307693
+combination,imc2023_haiper/fountain,1,13,0.07692307692307693
+combination,imc2023_heritage/dioscuri,1,30,0.03333333333333333
+combination,imc2023_heritage/wall,0,3,0.0
+combination,imc2023_theather_imc2024_church/church,9,80,0.1125
+combination,pt_brandenburg_british_buckingham/brandenburg_gate,0,80,0.0
+combination,pt_brandenburg_british_buckingham/british_museum,2,80,0.025
+combination,pt_sacrecoeur_trevi_tajmahal/taj_mahal,8,80,0.1
+combination,pt_sacrecoeur_trevi_tajmahal/trevi_fountain,2,80,0.025
+split_glrt,ETs/ET,48,49,0.9795918367346939
+split_glrt,ETs/another_ET,35,39,0.8974358974358975
+split_glrt,imc2023_haiper/fountain,0,13,0.0
+split_glrt,imc2023_heritage/dioscuri,8,30,0.26666666666666666
+split_glrt,imc2023_heritage/wall,0,3,0.0
+split_glrt,imc2023_theather_imc2024_church/church,25,80,0.3125
+split_glrt,pt_brandenburg_british_buckingham/brandenburg_gate,24,80,0.3
+split_glrt,pt_brandenburg_british_buckingham/british_museum,40,80,0.5
+split_glrt,pt_sacrecoeur_trevi_tajmahal/taj_mahal,36,80,0.45
+split_glrt,pt_sacrecoeur_trevi_tajmahal/trevi_fountain,37,80,0.4625

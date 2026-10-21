@@ -1,0 +1,16 @@
+# Experiment: Real-data pencil test: decisions
+# Seed: 87500000
+# Backend: cpp
+# Code commit: 13b10b6
+# Python 3.12.10, numpy 2.5.4, pandas 3.0.6
+Item,Value,Decision,CI_Low,CI_High
+"S size of pencil_q10 on test scenes in [3.5%, 6.5%]",0.013157894736842105,interim after batch 1: no decision,,
+"S size of acat on test scenes in [3.5%, 6.5%]",0.125,interim after batch 1: no decision,,
+"S size of sampson_mean on test scenes in [3.5%, 6.5%]",0.20394736842105263,interim after batch 1: no decision,,
+"S size of combination on test scenes in [3.5%, 6.5%]",0.07894736842105263,interim after batch 1: no decision,,
+"S size of split_glrt on test scenes in [3.5%, 6.5%]",0.42105263157894735,interim after batch 1: no decision,,
+"C gain of the combination over the better single statistic, jitter",-0.2236842105263158,,-0.6666666666666666,-0.030303030303030304
+"C gain of the combination over the better single statistic, drift",-0.1973684210526316,,-0.6190476190476191,-0.030303030303030304
+"C gain of the combination over the better single statistic, warp",-0.15789473684210528,,-0.47619047619047616,-0.030303030303030304
+"C gain of the combination over the better single statistic, swap",-0.21710526315789475,,-0.47619047619047616,-0.030303030303030304
+C combination keeps its size and is at least as powerful on every family,0.07894736842105263,interim after batch 1: no decision,,

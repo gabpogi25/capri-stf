@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CAPRI paper: the simulated window and the injection families (Section 9). Layout made for Inkscape;
+     edit this template, not design.svg. Images: assets/ (render_assets.R from
+     experiments/results/figure_design_*.csv). Placeholders in double braces are filled by render_assets.R. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1100" height="380" viewBox="0 0 1100 380">
+  <defs>
+    <style>
+      text { font-family: Roboto, sans-serif; }
+      .head { font-size: 19px; font-weight: 500; fill: #202124; }
+      .head2 { font-size: 16px; font-weight: 500; fill: #202124; }
+      .num { font-size: 19px; font-weight: 700; fill: #c5532f; }
+      .body { font-size: 13.5px; fill: #3c4043; }
+      .small { font-size: 12.5px; fill: #80868b; }
+      .m { font-family: 'Latin Modern Roman', serif; font-style: italic; }
+      .panel { fill: #ffffff; stroke: #d5d7da; stroke-width: 1.6; }
+    </style>
+  </defs>
+  <rect width="1100" height="380" fill="#ffffff"/>
+
+  <!-- a the window ........................................................................ -->
+  <rect x="6" y="6" width="300" height="368" rx="14" class="panel"/>
+  <text x="22" y="36" class="head"><tspan class="num">a</tspan><tspan dx="8">One window</tspan></text>
+  <image xlink:href="assets/design_scene.png" x="20" y="48" width="272" height="220.2"/>
+  <text class="body"><tspan x="22" y="292">40 points in a cube, six calibrated cameras</tspan><tspan x="22" y="312">on a 30° arc. Interleaved split:</tspan><tspan x="22" y="332"><tspan class="m" font-size="16" fill="#1f77ff">V</tspan><tspan class="m" font-size="11" baseline-shift="sub" fill="#1f77ff">A</tspan> = cameras 0, 2, 4 and <tspan class="m" font-size="16" fill="#ff2a1a">V</tspan><tspan class="m" font-size="11" baseline-shift="sub" fill="#ff2a1a">B</tspan> = 1, 3, 5,</tspan><tspan x="22" y="352">each reconstructed projectively on its own.</tspan></text>
+
+  <!-- b-f injections ...................................................................... -->
+  <rect x="318" y="6" width="152" height="272" rx="12" class="panel"/>
+  <rect x="332" y="27" width="10" height="10" rx="2" fill="#e8710a"/>
+  <text x="348" y="37" class="head2">Jitter</text>
+  <image xlink:href="assets/design_jitter.png" x="329" y="50" width="130" height="157.4"/>
+  <text class="body"><tspan x="332" y="236">Independent offsets</tspan><tspan x="332" y="256">per point and view</tspan></text>
+  <rect x="473" y="6" width="152" height="272" rx="12" class="panel"/>
+  <rect x="487" y="27" width="10" height="10" rx="2" fill="#9334e6"/>
+  <text x="503" y="37" class="head2">Drift</text>
+  <image xlink:href="assets/design_drift.png" x="484" y="50" width="130" height="157.4"/>
+  <text class="body"><tspan x="487" y="236">Coherent offsets that</tspan><tspan x="487" y="256">grow along the arc</tspan></text>
+  <rect x="628" y="6" width="152" height="272" rx="12" class="panel"/>
+  <rect x="642" y="27" width="10" height="10" rx="2" fill="#188038"/>
+  <text x="658" y="37" class="head2">Local warp</text>
+  <image xlink:href="assets/design_warp.png" x="639" y="50" width="130" height="157.4"/>
+  <text class="body"><tspan x="642" y="236">A smooth bump on</tspan><tspan x="642" y="256">a cluster of points</tspan></text>
+  <rect x="783" y="6" width="152" height="272" rx="12" class="panel"/>
+  <rect x="797" y="27" width="10" height="10" rx="2" fill="#d01884"/>
+  <text x="813" y="37" class="head2">Track swaps</text>
+  <image xlink:href="assets/design_swap.png" x="794" y="50" width="130" height="157.4"/>
+  <text class="body"><tspan x="797" y="236">Neighbouring tracks</tspan><tspan x="797" y="256">exchanged (15%)</tspan></text>
+  <rect x="938" y="6" width="152" height="272" rx="12" class="panel" style="fill:#f8f9fa"/>
+  <rect x="952" y="27" width="10" height="10" rx="2" fill="#1a73e8"/>
+  <text x="968" y="37" class="head2">Global map</text>
+  <image xlink:href="assets/design_global_projective.png" x="949" y="50" width="130" height="157.4"/>
+  <text class="body"><tspan x="952" y="236">A projective map of</tspan><tspan x="952" y="256">all of <tspan class="m" font-size="15">V</tspan><tspan class="m" font-size="10" baseline-shift="sub">B</tspan>: invisible</tspan></text>
+  <rect x="318" y="288" width="776" height="86" rx="12" fill="#f5f6f7"/>
+  <text class="small"><tspan x="334" y="314">One view of <tspan class="m">V</tspan><tspan class="m" font-size="9" baseline-shift="sub">B</tspan>: grey dots are the true image points, coloured arrows the injected displacements</tspan><tspan x="334" y="334">(30% of the points, all for the global map; drawn ×4, swaps to scale). The dose is the induced RMS pixel displacement.</tspan><tspan x="334" y="354">The global map is a gauge: every pencil cross-ratio is unchanged, so no frame-free test can see it.</tspan></text>
+</svg>
